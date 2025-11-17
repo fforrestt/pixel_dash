@@ -1,0 +1,21 @@
+{
+  "name": "pixel-dash-racers",
+  "version": "1.0.0",
+  "description": "A fast-paced 2D side-scrolling platform racing game",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=server && npm run build --workspace=client",
+    "install:all": "npm install && npm install --workspace=server && npm install --workspace=client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
