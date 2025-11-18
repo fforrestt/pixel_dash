@@ -6,13 +6,17 @@ const TICK_DURATION = 1000 / TICK_RATE;
 
 // Physics constants
 const GRAVITY = 0.5;
-const JUMP_STRENGTH = -8;
-const DASH_STRENGTH = 12;
-const MOVE_SPEED = 3;
-const FRICTION = 0.8;
-const AIR_FRICTION = 0.95;
+const JUMP_STRENGTH = -10;          // negative for upward jump
+const DASH_STRENGTH = 7;            // stronger dash
+const GROUND_MOVE_SPEED = 4;        // pixels per tick on ground
+const GROUND_ACCEL = 1.0;
+const AIR_ACCEL = 0.4;
+const GROUND_FRICTION = 0.92;
+const ROTATION_SPEED = 5;
 const PLAYER_SIZE = 16;
 const TILE_SIZE = 16;
+
+const MAX_HORIZONTAL_SPEED = Math.max(GROUND_MOVE_SPEED, DASH_STRENGTH);
 
 export class GameLoop {
   private gameState: GameState;
@@ -48,67 +52,74 @@ export class GameLoop {
   }
 
   private updatePlayer(player: Player, deltaTime: number): void {
-    // Apply gravity
     if (!player.grounded) {
       player.vy += GRAVITY;
-    }
-
-    // Apply friction
-    if (player.grounded) {
-      player.vx *= FRICTION;
+  
+      player.rotation += ROTATION_SPEED * (player.vx > 0 ? 1 : -1);
+      player.rotation = player.rotation % 360;
     } else {
-      player.vx *= AIR_FRICTION;
+      player.rotation = 0;
+  
+      // Apply ground friction
+      player.vx *= GROUND_FRICTION;
+      if (Math.abs(player.vx) < 0.05) {
+        player.vx = 0;
+      }
     }
-
+  
     // Update position
     player.x += player.vx;
     player.y += player.vy;
-
-    // Update distance for ranking
+  
     player.distance = player.x;
-
-    // Clamp velocity
-    player.vx = Math.max(-10, Math.min(10, player.vx));
+  
+    // Clamp velocity using our constants
+    player.vx = Math.max(-MAX_HORIZONTAL_SPEED, Math.min(MAX_HORIZONTAL_SPEED, player.vx));
     player.vy = Math.max(-15, Math.min(15, player.vy));
   }
 
   processInput(playerId: string, input: PlayerInput): void {
     const player = this.gameState.players.get(playerId);
-    if (!player || this.gameState.status !== 'racing' || player.finished) {
-      return;
-    }
-
-    // Validate input rate (prevent spam)
+    if (!player || this.gameState.status !== 'racing' || player.finished) return;
+  
     const now = Date.now();
-    if (input.timestamp < now - 200) {
-      return; // Ignore old inputs
+    if (input.timestamp < now - 200) return;
+  
+    // Horizontal movement: acceleration-based
+    if (player.grounded) {
+      if (input.left && !input.right) {
+        player.vx -= GROUND_ACCEL;
+      } else if (input.right && !input.left) {
+        player.vx += GROUND_ACCEL;
+      }
+    } else {
+      if (input.left && !input.right) {
+        player.vx -= AIR_ACCEL;
+      } else if (input.right && !input.left) {
+        player.vx += AIR_ACCEL;
+      }
     }
-
-    // Horizontal movement
-    if (input.left && !input.right) {
-      player.vx = -MOVE_SPEED;
-    } else if (input.right && !input.left) {
-      player.vx = MOVE_SPEED;
-    }
-
-    // Jump logic
+  
+    // Jump / dash
     if (input.jump) {
-      if (player.grounded && !player.hasDashed) {
-        // First jump (ground jump)
+      if (player.grounded) {
         player.vy = JUMP_STRENGTH;
         player.grounded = false;
         player.canDash = true;
         player.hasDashed = false;
-      } else if (!player.grounded && player.canDash && !player.hasDashed) {
-        // Dash (mid-air)
-        const dashDirection = player.vx > 0 ? 1 : player.vx < 0 ? -1 : 1;
+      } else if (player.canDash && !player.hasDashed) {
+        const dashDirection =
+          player.vx > 0 ? 1 :
+          player.vx < 0 ? -1 :
+          (input.right ? 1 : input.left ? -1 : 1);
+  
         player.vx += dashDirection * DASH_STRENGTH;
-        player.vy *= 0.3; // Slight vertical component
         player.hasDashed = true;
         player.canDash = false;
       }
     }
   }
+  
 
   private checkCollisions(player: Player): void {
     const level = this.gameState.level;
@@ -117,20 +128,26 @@ export class GameLoop {
     const playerTop = Math.floor(player.y / TILE_SIZE);
     const playerBottom = Math.floor((player.y + PLAYER_SIZE) / TILE_SIZE);
 
-    // Check ground collision
+    // Check ground collision - improved to prevent falling through
     let onGround = false;
     for (let x = playerLeft; x <= playerRight; x++) {
-      const tileBelow = LevelGenerator.getTileAt(level, x, playerBottom + 1);
-      if (tileBelow && LevelGenerator.isSolid(level, x, playerBottom + 1)) {
-        // Landing on top of a platform
-        if (player.vy > 0) {
-          player.y = (playerBottom) * TILE_SIZE;
-          player.vy = 0;
-          player.grounded = true;
-          player.canDash = true;
-          player.hasDashed = false;
-          onGround = true;
-          break;
+      if (LevelGenerator.isSolid(level, x, playerBottom + 1)) {
+        // Check if player is moving downward or stationary
+        if (player.vy >= -0.5) { // Allow slight upward velocity tolerance
+          // Snap to top of tile
+          const targetY = (playerBottom + 1) * TILE_SIZE - PLAYER_SIZE;
+          
+          // Only snap if reasonably close (within 4 pixels)
+          if (Math.abs(player.y - targetY) <= 4) {
+            player.y = targetY;
+            player.vy = 0;
+            player.grounded = true;
+            player.rotation = 0; // Reset rotation immediately on landing
+            player.canDash = true;
+            player.hasDashed = false;
+            onGround = true;
+            break;
+          }
         }
       }
     }
@@ -144,23 +161,33 @@ export class GameLoop {
       }
     }
 
-    // Check side collisions
+    // Check side collisions - with wrap-around for testground closed loop
     if (player.vx > 0) {
       // Moving right
-      for (let y = playerTop; y <= playerBottom; y++) {
-        if (LevelGenerator.isSolid(level, playerRight + 1, y)) {
-          player.x = (playerRight) * TILE_SIZE;
-          player.vx = 0;
-          break;
+      if (level.id === 'testground' && playerRight + 1 >= level.width) {
+        // Wrap to left side for testground
+        player.x = 2 * TILE_SIZE;
+      } else {
+        for (let y = playerTop; y <= playerBottom; y++) {
+          if (LevelGenerator.isSolid(level, playerRight + 1, y)) {
+            player.x = (playerRight) * TILE_SIZE;
+            player.vx = 0;
+            break;
+          }
         }
       }
     } else if (player.vx < 0) {
       // Moving left
-      for (let y = playerTop; y <= playerBottom; y++) {
-        if (LevelGenerator.isSolid(level, playerLeft - 1, y)) {
-          player.x = (playerLeft) * TILE_SIZE;
-          player.vx = 0;
-          break;
+      if (level.id === 'testground' && playerLeft - 1 < 0) {
+        // Wrap to right side for testground
+        player.x = (level.width - 3) * TILE_SIZE;
+      } else {
+        for (let y = playerTop; y <= playerBottom; y++) {
+          if (LevelGenerator.isSolid(level, playerLeft - 1, y)) {
+            player.x = (playerLeft) * TILE_SIZE;
+            player.vx = 0;
+            break;
+          }
         }
       }
     }
@@ -177,9 +204,9 @@ export class GameLoop {
     }
 
     // Update grounded status if not on ground
-    if (!onGround && player.grounded) {
-      // Small grace period before considering airborne
-      if (player.vy > 0.5) {
+    if (!onGround) {
+      // Only unset grounded if clearly falling (not just a small gap)
+      if (player.vy > 1.0 || player.y > (playerBottom + 2) * TILE_SIZE) {
         player.grounded = false;
       }
     }

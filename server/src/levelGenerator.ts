@@ -238,5 +238,109 @@ export class LevelGenerator {
     const tile = LevelGenerator.getTileAt(level, x, y);
     return tile?.type === 'finish';
   }
+
+  generateTestLevel(): Level {
+    // Larger test level with ground, platforms, and obstacles for movement testing - CLOSED LOOP
+    const width = 200; // Doubled width for more testing space
+    const height = 30; // Increased height for better vertical space
+    const tiles: Tile[] = [];
+
+    // Initialize all tiles as empty
+    for (let x = 0; x < width; x++) {
+      for (let y = 0; y < height; y++) {
+        tiles.push({ x, y, type: 'empty' });
+      }
+    }
+
+    const groundY = height - 3;
+
+    // Ground level (bottom 3 rows across entire width for stability)
+    for (let x = 0; x < width; x++) {
+      tiles[x * height + groundY].type = 'solid';
+      tiles[x * height + groundY + 1].type = 'solid';
+      tiles[x * height + groundY + 2].type = 'solid';
+    }
+
+    // Left wall (closed loop)
+    for (let y = 0; y < height; y++) {
+      tiles[0 * height + y].type = 'solid';
+      tiles[1 * height + y].type = 'solid';
+    }
+
+    // Right wall (closed loop)
+    for (let y = 0; y < height; y++) {
+      tiles[(width - 1) * height + y].type = 'solid';
+      tiles[(width - 2) * height + y].type = 'solid';
+    }
+
+    // Start area (left side)
+    const startX = 5;
+    for (let x = startX; x < startX + 3; x++) {
+      for (let y = groundY - 1; y < height; y++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    tiles[startX * height + groundY - 2].type = 'start';
+
+    // Finish area (right side)
+    const finishX = width - 8;
+    for (let x = finishX; x < finishX + 3; x++) {
+      for (let y = groundY - 1; y < height; y++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    tiles[finishX * height + groundY - 2].type = 'finish';
+
+    // Test platforms at various heights for jump/dash testing (expanded for larger map)
+    // Platform 1: Low platform
+    const p1X = 30;
+    const p1Y = groundY - 4;
+    for (let x = p1X; x < p1X + 8; x++) {
+      tiles[x * height + p1Y].type = 'solid';
+    }
+
+    // Platform 2: Medium height
+    const p2X = 55;
+    const p2Y = groundY - 8;
+    for (let x = p2X; x < p2X + 6; x++) {
+      tiles[x * height + p2Y].type = 'solid';
+    }
+
+    // Platform 3: High platform
+    const p3X = 80;
+    const p3Y = groundY - 12;
+    for (let x = p3X; x < p3X + 8; x++) {
+      tiles[x * height + p3Y].type = 'solid';
+    }
+
+    // Platform 4: Medium height, further right
+    const p4X = 110;
+    const p4Y = groundY - 7;
+    for (let x = p4X; x < p4X + 7; x++) {
+      tiles[x * height + p4Y].type = 'solid';
+    }
+
+    // Platform 5: Low platform
+    const p5X = 140;
+    const p5Y = groundY - 5;
+    for (let x = p5X; x < p5X + 6; x++) {
+      tiles[x * height + p5Y].type = 'solid';
+    }
+
+    // Platform 6: Very high platform for dash testing
+    const p6X = 165;
+    const p6Y = groundY - 15;
+    for (let x = p6X; x < p6X + 10; x++) {
+      tiles[x * height + p6Y].type = 'solid';
+    }
+
+    return {
+      id: 'testground',
+      width,
+      height,
+      tiles,
+      type: 'sprint'
+    };
+  }
 }
 

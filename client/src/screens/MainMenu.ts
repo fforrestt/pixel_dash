@@ -32,6 +32,7 @@ export class MainMenu {
         <button class="menu-button" id="btn-leaderboard">Leaderboards</button>
         <button class="menu-button" id="btn-cosmetics">Cosmetics</button>
         <button class="menu-button" id="btn-map-editor">Map Editor</button>
+        <button class="menu-button" id="btn-testground" style="background: #4a4a4a; border-color: #888;">🧪 Testground (Dev)</button>
         
         <div style="margin-top: 20px; text-align: center;">
           <input type="text" id="player-name" placeholder="Player Name" 
@@ -75,6 +76,10 @@ export class MainMenu {
       this.onMapEditor();
     });
 
+    document.getElementById('btn-testground')?.addEventListener('click', () => {
+      this.onTestground();
+    });
+
     document.getElementById('btn-save-name')?.addEventListener('click', () => {
       const input = document.getElementById('player-name') as HTMLInputElement;
       if (input?.value) {
@@ -110,6 +115,10 @@ export class MainMenu {
 
   private onMapEditor(): void {
     this.container.dispatchEvent(new CustomEvent('screen-change', { detail: 'map-editor' }));
+  }
+
+  private onTestground(): void {
+    this.container.dispatchEvent(new CustomEvent('screen-change', { detail: 'testground' }));
   }
 }
 

@@ -458,7 +458,7 @@ function handleSetColor(ws: WebSocket, playerId: string, data: any): void {
     if (client?.lobbyId) {
       const lobby = lobbyManager.getLobby(client.lobbyId);
       const player = lobby?.players.get(playerId);
-      if (player) {
+      if (player && lobby) {
         player.color = color;
         broadcastToLobby(client.lobbyId, {
           type: 'lobby_state',

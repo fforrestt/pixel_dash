@@ -86,7 +86,8 @@ export class LobbyManager {
       lapCount: 0,
       lastCheckpoint: -1,
       finished: false,
-      distance: 0
+      distance: 0,
+      rotation: 0
     };
 
     lobby.players.set(playerId, player);

@@ -102,6 +102,16 @@ export class Renderer {
     // Only render if visible
     if (screenX > -PLAYER_SIZE && screenX < this.canvas.width + PLAYER_SIZE &&
         screenY > -PLAYER_SIZE && screenY < this.canvas.height + PLAYER_SIZE) {
+      
+      this.ctx.save();
+      
+      // Apply rotation around player center (visual only, doesn't affect hitbox)
+      const centerX = screenX + PLAYER_SIZE / 2;
+      const centerY = screenY + PLAYER_SIZE / 2;
+      this.ctx.translate(centerX, centerY);
+      this.ctx.rotate((player.rotation || 0) * Math.PI / 180);
+      this.ctx.translate(-centerX, -centerY);
+      
       // Draw player square
       this.ctx.fillStyle = player.color;
       this.ctx.fillRect(screenX, screenY, PLAYER_SIZE, PLAYER_SIZE);
@@ -112,8 +122,10 @@ export class Renderer {
         this.ctx.lineWidth = 2;
         this.ctx.strokeRect(screenX, screenY, PLAYER_SIZE, PLAYER_SIZE);
       }
+      
+      this.ctx.restore();
 
-      // Draw name above player
+      // Draw name above player (not rotated)
       this.ctx.fillStyle = '#fff';
       this.ctx.font = '10px monospace';
       this.ctx.textAlign = 'center';

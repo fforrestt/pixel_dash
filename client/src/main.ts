@@ -8,6 +8,7 @@ import { MapEditorScreen } from './screens/MapEditor.js';
 import { PublicLobbyBrowserScreen } from './screens/PublicLobbyBrowser.js';
 import { CosmeticsScreen } from './screens/Cosmetics.js';
 import { LeaderboardScreen } from './screens/Leaderboard.js';
+import { TestgroundScreen } from './screens/Testground.js';
 
 class App {
   private container: HTMLElement;
@@ -29,6 +30,7 @@ class App {
     this.screens.set('public-lobbies', new PublicLobbyBrowserScreen(this.container, this.network));
     this.screens.set('cosmetics', new CosmeticsScreen(this.container, this.network));
     this.screens.set('leaderboard', new LeaderboardScreen(this.container, this.network));
+    this.screens.set('testground', new TestgroundScreen(this.container));
 
     // Listen for screen changes
     this.container.addEventListener('screen-change', (e: any) => {

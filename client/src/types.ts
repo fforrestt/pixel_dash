@@ -33,6 +33,7 @@ export interface Player {
   finished: boolean;
   finishTime?: number;
   distance: number;
+  rotation: number;
 }
 
 export interface GameState {

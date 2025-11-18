@@ -33,6 +33,7 @@ export interface Player {
   finished: boolean;
   finishTime?: number;
   distance: number; // Distance traveled for ranking
+  rotation: number; // Rotation angle in degrees for visual effect
 }
 
 export interface GameState {
