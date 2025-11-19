@@ -1,0 +1,163 @@
+[1763495807396] GROUND RIGHT: 0.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3402.6, 736.0) Testground.ts:265:13
+[1763495807403] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3406.4, 736.0) Testground.ts:265:13
+[1763495807411] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3410.7, 736.0) Testground.ts:265:13
+[1763495807418] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3415.7, 736.0) Testground.ts:265:13
+[1763495807424] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3420.1, 736.0) Testground.ts:265:13
+[1763495807431] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3423.9, 736.0) Testground.ts:265:13
+[1763495807438] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3428.2, 736.0) Testground.ts:265:13
+[1763495807445] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3432.6, 736.0) Testground.ts:265:13
+[1763495807452] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3437.0, 736.0) Testground.ts:265:13
+[1763495807459] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3441.4, 736.0) Testground.ts:265:13
+[1763495807466] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3445.7, 736.0) Testground.ts:265:13
+[1763495807473] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3450.1, 736.0) Testground.ts:265:13
+[1763495807480] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3454.5, 736.0) Testground.ts:265:13
+[1763495807487] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3458.9, 736.0) Testground.ts:265:13
+[1763495807493] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3463.2, 736.0) Testground.ts:265:13
+[1763495807501] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3467.0, 736.0) Testground.ts:265:13
+[1763495807507] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3472.0, 736.0) Testground.ts:265:13
+[1763495807515] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3475.7, 736.0) Testground.ts:265:13
+[1763495807522] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3480.7, 736.0) Testground.ts:265:13
+[1763495807528] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3485.1, 736.0) Testground.ts:265:13
+[1763495807535] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:265:13
+[1763495807535] GROUND FRICTION: 10.00 -> 9.20 (friction: 0.92) Testground.ts:265:13
+[1763495807535] VELOCITY CHANGE: vx 10.00 -> 9.20, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807542] GROUND NO INPUT: vx=9.20 (friction will apply) Testground.ts:265:13
+[1763495807542] GROUND FRICTION: 9.20 -> 8.46 (friction: 0.92) Testground.ts:265:13
+[1763495807542] VELOCITY CHANGE: vx 9.20 -> 8.46, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807550] GROUND NO INPUT: vx=8.46 (friction will apply) Testground.ts:265:13
+[1763495807550] GROUND FRICTION: 8.46 -> 7.79 (friction: 0.92) Testground.ts:265:13
+[1763495807550] VELOCITY CHANGE: vx 8.46 -> 7.79, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807556] GROUND NO INPUT: vx=7.79 (friction will apply) Testground.ts:265:13
+[1763495807556] GROUND FRICTION: 7.79 -> 7.16 (friction: 0.92) Testground.ts:265:13
+[1763495807556] VELOCITY CHANGE: vx 7.79 -> 7.16, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807563] GROUND NO INPUT: vx=7.16 (friction will apply) Testground.ts:265:13
+[1763495807563] GROUND FRICTION: 7.16 -> 6.59 (friction: 0.92) Testground.ts:265:13
+[1763495807563] VELOCITY CHANGE: vx 7.16 -> 6.59, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807570] GROUND NO INPUT: vx=6.59 (friction will apply) Testground.ts:265:13
+[1763495807570] GROUND FRICTION: 6.59 -> 6.06 (friction: 0.92) Testground.ts:265:13
+[1763495807570] VELOCITY CHANGE: vx 6.59 -> 6.06, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807578] GROUND NO INPUT: vx=6.06 (friction will apply) Testground.ts:265:13
+[1763495807578] GROUND FRICTION: 6.06 -> 5.58 (friction: 0.92) Testground.ts:265:13
+[1763495807578] VELOCITY CHANGE: vx 6.06 -> 5.58, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807584] GROUND NO INPUT: vx=5.58 (friction will apply) Testground.ts:265:13
+[1763495807584] GROUND FRICTION: 5.58 -> 5.13 (friction: 0.92) Testground.ts:265:13
+[1763495807584] VELOCITY CHANGE: vx 5.58 -> 5.13, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807591] GROUND NO INPUT: vx=5.13 (friction will apply) Testground.ts:265:13
+[1763495807591] GROUND FRICTION: 5.13 -> 4.72 (friction: 0.92) Testground.ts:265:13
+[1763495807591] VELOCITY CHANGE: vx 5.13 -> 4.72, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807598] GROUND NO INPUT: vx=4.72 (friction will apply) Testground.ts:265:13
+[1763495807598] GROUND FRICTION: 4.72 -> 4.34 (friction: 0.92) Testground.ts:265:13
+[1763495807598] VELOCITY CHANGE: vx 4.72 -> 4.34, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807605] GROUND NO INPUT: vx=4.34 (friction will apply) Testground.ts:265:13
+[1763495807605] GROUND FRICTION: 4.34 -> 4.00 (friction: 0.92) Testground.ts:265:13
+[1763495807605] VELOCITY CHANGE: vx 4.34 -> 4.00, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807611] GROUND NO INPUT: vx=4.00 (friction will apply) Testground.ts:265:13
+[1763495807611] GROUND FRICTION: 4.00 -> 3.68 (friction: 0.92) Testground.ts:265:13
+[1763495807611] VELOCITY CHANGE: vx 4.00 -> 3.68, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807619] GROUND NO INPUT: vx=3.68 (friction will apply) Testground.ts:265:13
+[1763495807619] GROUND FRICTION: 3.68 -> 3.38 (friction: 0.92) Testground.ts:265:13
+[1763495807619] VELOCITY CHANGE: vx 3.68 -> 3.38, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807626] GROUND NO INPUT: vx=3.38 (friction will apply) Testground.ts:265:13
+[1763495807626] GROUND FRICTION: 3.38 -> 3.11 (friction: 0.92) Testground.ts:265:13
+[1763495807626] VELOCITY CHANGE: vx 3.38 -> 3.11, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807633] GROUND NO INPUT: vx=3.11 (friction will apply) Testground.ts:265:13
+[1763495807633] GROUND FRICTION: 3.11 -> 2.86 (friction: 0.92) Testground.ts:265:13
+[1763495807633] VELOCITY CHANGE: vx 3.11 -> 2.86, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807639] GROUND NO INPUT: vx=2.86 (friction will apply) Testground.ts:265:13
+[1763495807639] GROUND FRICTION: 2.86 -> 2.63 (friction: 0.92) Testground.ts:265:13
+[1763495807639] VELOCITY CHANGE: vx 2.86 -> 2.63, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807647] GROUND NO INPUT: vx=2.63 (friction will apply) Testground.ts:265:13
+[1763495807647] GROUND FRICTION: 2.63 -> 2.42 (friction: 0.92) Testground.ts:265:13
+[1763495807647] VELOCITY CHANGE: vx 2.63 -> 2.42, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807654] GROUND NO INPUT: vx=2.42 (friction will apply) Testground.ts:265:13
+[1763495807654] GROUND FRICTION: 2.42 -> 2.23 (friction: 0.92) Testground.ts:265:13
+[1763495807654] VELOCITY CHANGE: vx 2.42 -> 2.23, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807660] GROUND NO INPUT: vx=2.23 (friction will apply) Testground.ts:265:13
+[1763495807660] GROUND FRICTION: 2.23 -> 2.05 (friction: 0.92) Testground.ts:265:13
+[1763495807660] VELOCITY CHANGE: vx 2.23 -> 2.05, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807667] GROUND NO INPUT: vx=2.05 (friction will apply) Testground.ts:265:13
+[1763495807667] GROUND FRICTION: 2.05 -> 1.89 (friction: 0.92) Testground.ts:265:13
+[1763495807667] VELOCITY CHANGE: vx 2.05 -> 1.89, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807674] GROUND NO INPUT: vx=1.89 (friction will apply) Testground.ts:265:13
+[1763495807674] GROUND FRICTION: 1.89 -> 1.74 (friction: 0.92) Testground.ts:265:13
+[1763495807674] VELOCITY CHANGE: vx 1.89 -> 1.74, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807681] GROUND NO INPUT: vx=1.74 (friction will apply) Testground.ts:265:13
+[1763495807682] GROUND FRICTION: 1.74 -> 1.60 (friction: 0.92) Testground.ts:265:13
+[1763495807682] VELOCITY CHANGE: vx 1.74 -> 1.60, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807688] GROUND NO INPUT: vx=1.60 (friction will apply) Testground.ts:265:13
+[1763495807688] GROUND FRICTION: 1.60 -> 1.47 (friction: 0.92) Testground.ts:265:13
+[1763495807688] VELOCITY CHANGE: vx 1.60 -> 1.47, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807695] GROUND NO INPUT: vx=1.47 (friction will apply) Testground.ts:265:13
+[1763495807695] GROUND FRICTION: 1.47 -> 1.35 (friction: 0.92) Testground.ts:265:13
+[1763495807695] VELOCITY CHANGE: vx 1.47 -> 1.35, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807702] GROUND NO INPUT: vx=1.35 (friction will apply) Testground.ts:265:13
+[1763495807702] GROUND FRICTION: 1.35 -> 1.24 (friction: 0.92) Testground.ts:265:13
+[1763495807702] VELOCITY CHANGE: vx 1.35 -> 1.24, vy 0.00 -> 0.00 | grounded: true Testground.ts:265:13
+[1763495807709] GROUND NO INPUT: vx=1.24 (friction will apply) Testground.ts:265:13
+[1763495807709] GROUND FRICTION: 1.24 -> 1.14 (friction: 0.92) Testground.ts:265:13
+[1763495807716] GROUND NO INPUT: vx=1.14 (friction will apply) Testground.ts:265:13
+[1763495807716] GROUND FRICTION: 1.14 -> 1.05 (friction: 0.92) Testground.ts:265:13
+[1763495807723] GROUND NO INPUT: vx=1.05 (friction will apply) Testground.ts:265:13
+[1763495807723] GROUND FRICTION: 1.05 -> 0.97 (friction: 0.92) Testground.ts:265:13
+[1763495807730] GROUND NO INPUT: vx=0.97 (friction will apply) Testground.ts:265:13
+[1763495807730] GROUND FRICTION: 0.97 -> 0.89 (friction: 0.92) Testground.ts:265:13
+[1763495807737] GROUND NO INPUT: vx=0.89 (friction will apply) Testground.ts:265:13
+[1763495807737] GROUND FRICTION: 0.89 -> 0.82 (friction: 0.92) Testground.ts:265:13
+[1763495807743] GROUND NO INPUT: vx=0.82 (friction will apply) Testground.ts:265:13
+[1763495807743] GROUND FRICTION: 0.82 -> 0.75 (friction: 0.92) Testground.ts:265:13
+[1763495807751] GROUND NO INPUT: vx=0.75 (friction will apply) Testground.ts:265:13
+[1763495807751] GROUND FRICTION: 0.75 -> 0.69 (friction: 0.92) Testground.ts:265:13
+[1763495807758] GROUND NO INPUT: vx=0.69 (friction will apply) Testground.ts:265:13
+[1763495807758] GROUND FRICTION: 0.69 -> 0.64 (friction: 0.92) Testground.ts:265:13
+[1763495807765] GROUND NO INPUT: vx=0.64 (friction will apply) Testground.ts:265:13
+[1763495807765] GROUND FRICTION: 0.64 -> 0.59 (friction: 0.92) Testground.ts:265:13
+[1763495807772] GROUND NO INPUT: vx=0.59 (friction will apply) Testground.ts:265:13
+[1763495807772] GROUND FRICTION: 0.59 -> 0.54 (friction: 0.92) Testground.ts:265:13
+[1763495807778] GROUND NO INPUT: vx=0.54 (friction will apply) Testground.ts:265:13
+[1763495807778] GROUND FRICTION: 0.54 -> 0.50 (friction: 0.92) Testground.ts:265:13
+[1763495807786] GROUND NO INPUT: vx=0.50 (friction will apply) Testground.ts:265:13
+[1763495807786] GROUND FRICTION: 0.50 -> 0.46 (friction: 0.92) Testground.ts:265:13
+[1763495807792] GROUND NO INPUT: vx=0.46 (friction will apply) Testground.ts:265:13
+[1763495807792] GROUND FRICTION: 0.46 -> 0.42 (friction: 0.92) Testground.ts:265:13
+[1763495807800] GROUND NO INPUT: vx=0.42 (friction will apply) Testground.ts:265:13
+[1763495807800] GROUND FRICTION: 0.42 -> 0.39 (friction: 0.92) Testground.ts:265:13
+[1763495807806] GROUND NO INPUT: vx=0.39 (friction will apply) Testground.ts:265:13
+[1763495807806] GROUND FRICTION: 0.39 -> 0.36 (friction: 0.92) Testground.ts:265:13
+[1763495807813] GROUND NO INPUT: vx=0.36 (friction will apply) Testground.ts:265:13
+[1763495807813] GROUND FRICTION: 0.36 -> 0.33 (friction: 0.92) Testground.ts:265:13
+[1763495807820] GROUND NO INPUT: vx=0.33 (friction will apply) Testground.ts:265:13
+[1763495807820] GROUND FRICTION: 0.33 -> 0.30 (friction: 0.92) Testground.ts:265:13
+[1763495807827] GROUND NO INPUT: vx=0.30 (friction will apply) Testground.ts:265:13
+[1763495807827] GROUND FRICTION: 0.30 -> 0.28 (friction: 0.92) Testground.ts:265:13
+[1763495807834] GROUND NO INPUT: vx=0.28 (friction will apply) Testground.ts:265:13
+[1763495807834] GROUND FRICTION: 0.28 -> 0.26 (friction: 0.92) Testground.ts:265:13
+[1763495807841] GROUND NO INPUT: vx=0.26 (friction will apply) Testground.ts:265:13
+[1763495807841] GROUND FRICTION: 0.26 -> 0.23 (friction: 0.92) Testground.ts:265:13
+[1763495807848] GROUND NO INPUT: vx=0.23 (friction will apply) Testground.ts:265:13
+[1763495807848] GROUND FRICTION: 0.23 -> 0.22 (friction: 0.92) Testground.ts:265:13
+[1763495807855] GROUND NO INPUT: vx=0.22 (friction will apply) Testground.ts:265:13
+[1763495807855] GROUND FRICTION: 0.22 -> 0.20 (friction: 0.92) Testground.ts:265:13
+[1763495807862] GROUND NO INPUT: vx=0.20 (friction will apply) Testground.ts:265:13
+[1763495807862] GROUND FRICTION: 0.20 -> 0.18 (friction: 0.92) Testground.ts:265:13
+[1763495807869] GROUND NO INPUT: vx=0.18 (friction will apply) Testground.ts:265:13
+[1763495807869] GROUND FRICTION: 0.18 -> 0.17 (friction: 0.92) Testground.ts:265:13
+[1763495807876] GROUND NO INPUT: vx=0.17 (friction will apply) Testground.ts:265:13
+[1763495807876] GROUND FRICTION: 0.17 -> 0.15 (friction: 0.92) Testground.ts:265:13
+[1763495807882] GROUND NO INPUT: vx=0.15 (friction will apply) Testground.ts:265:13
+[1763495807883] GROUND FRICTION: 0.15 -> 0.14 (friction: 0.92) Testground.ts:265:13
+[1763495807890] GROUND NO INPUT: vx=0.14 (friction will apply) Testground.ts:265:13
+[1763495807890] GROUND FRICTION: 0.14 -> 0.13 (friction: 0.92) Testground.ts:265:13
+[1763495807897] GROUND NO INPUT: vx=0.13 (friction will apply) Testground.ts:265:13
+[1763495807897] GROUND FRICTION: 0.13 -> 0.12 (friction: 0.92) Testground.ts:265:13
+[1763495807904] GROUND NO INPUT: vx=0.12 (friction will apply) Testground.ts:265:13
+[1763495807911] GROUND NO INPUT: vx=0.11 (friction will apply) Testground.ts:265:13
+[1763495807917] GROUND NO INPUT: vx=0.10 (friction will apply) Testground.ts:265:13
+[1763495807925] GROUND NO INPUT: vx=0.09 (friction will apply) Testground.ts:265:13
+[1763495807931] GROUND NO INPUT: vx=0.09 (friction will apply) Testground.ts:265:13
+[1763495807938] GROUND NO INPUT: vx=0.08 (friction will apply) Testground.ts:265:13
+[1763495807945] GROUND NO INPUT: vx=0.07 (friction will apply) Testground.ts:265:13
+[1763495807953] GROUND NO INPUT: vx=0.07 (friction will apply) Testground.ts:265:13
+[1763495807959] GROUND NO INPUT: vx=0.06 (friction will apply) Testground.ts:265:13
+[1763495807966] GROUND NO INPUT: vx=0.06 (friction will apply) Testground.ts:265:13
+[1763495807973] GROUND NO INPUT: vx=0.05 (friction will apply) Testground.ts:265:13
+[1763495807973] GROUND FRICTION: 0.05 -> 0.00 (friction: 0.92) Testground.ts:265:13

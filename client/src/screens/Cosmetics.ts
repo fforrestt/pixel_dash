@@ -12,6 +12,7 @@ export class CosmeticsScreen {
   private container: HTMLElement;
   private network: NetworkClient;
   private cosmetics: CosmeticsData | null = null;
+  private isActive: boolean = false; // Track if this screen is currently active
 
   constructor(container: HTMLElement, network: NetworkClient) {
     this.container = container;
@@ -19,13 +20,35 @@ export class CosmeticsScreen {
 
     this.network.on('cosmetics', (data: CosmeticsData) => {
       this.cosmetics = data;
-      this.render();
+      // Only re-render if this screen is currently active
+      if (this.isActive) {
+        this.renderContent();
+      }
     });
-
-    this.network.getCosmetics();
   }
 
-  private render(): void {
+  render(): void {
+    // Mark screen as active
+    this.isActive = true;
+    
+    // Request cosmetics data when screen is shown
+    this.network.getCosmetics();
+    
+    // If we already have cosmetics data, render immediately
+    if (this.cosmetics) {
+      this.renderContent();
+    } else {
+      // Otherwise show loading state
+      this.container.innerHTML = '<p>Loading...</p>';
+    }
+  }
+
+  cleanup(): void {
+    // Mark screen as inactive when cleaned up
+    this.isActive = false;
+  }
+
+  private renderContent(): void {
     if (!this.cosmetics) {
       this.container.innerHTML = '<p>Loading...</p>';
       return;

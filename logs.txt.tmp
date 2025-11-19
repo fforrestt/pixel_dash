@@ -1,0 +1,959 @@
+Connected to server network.ts:28:17
+[1763486348922] GROUND RIGHT: 0.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=start | pos=(160.0, 576.0) Testground.ts:205:13
+[1763486348929] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=start | pos=(163.8, 576.0) Testground.ts:205:13
+[1763486348936] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=start | pos=(168.1, 576.0) Testground.ts:205:13
+[1763486348943] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=start | pos=(172.5, 576.0) Testground.ts:205:13
+[1763486348950] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(176.9, 576.0) Testground.ts:205:13
+[1763486348957] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(181.3, 576.0) Testground.ts:205:13
+[1763486348964] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(185.6, 576.0) Testground.ts:205:13
+[1763486348971] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(190.0, 576.0) Testground.ts:205:13
+[1763486348978] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(194.4, 576.0) Testground.ts:205:13
+[1763486348985] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(198.8, 576.0) Testground.ts:205:13
+[1763486348992] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(203.1, 576.0) Testground.ts:205:13
+[1763486348998] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(207.5, 576.0) Testground.ts:205:13
+[1763486349006] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(211.3, 576.0) Testground.ts:205:13
+[1763486349012] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(216.3, 576.0) Testground.ts:205:13
+[1763486349020] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(220.0, 576.0) Testground.ts:205:13
+[1763486349027] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(225.0, 576.0) Testground.ts:205:13
+[1763486349033] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(229.4, 576.0) Testground.ts:205:13
+[1763486349040] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(233.1, 576.0) Testground.ts:205:13
+[1763486349047] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(237.5, 576.0) Testground.ts:205:13
+[1763486349054] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(241.9, 576.0) Testground.ts:205:13
+[1763486349061] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(246.3, 576.0) Testground.ts:205:13
+[1763486349068] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(250.6, 576.0) Testground.ts:205:13
+[1763486349075] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(255.0, 576.0) Testground.ts:205:13
+[1763486349082] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(259.4, 576.0) Testground.ts:205:13
+[1763486349088] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(263.8, 576.0) Testground.ts:205:13
+[1763486349096] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(267.5, 576.0) Testground.ts:205:13
+[1763486349102] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(272.5, 576.0) Testground.ts:205:13
+[1763486349110] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(276.3, 576.0) Testground.ts:205:13
+[1763486349117] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(281.3, 576.0) Testground.ts:205:13
+[1763486349123] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(285.6, 576.0) Testground.ts:205:13
+[1763486349131] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(289.4, 576.0) Testground.ts:205:13
+[1763486349137] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(294.4, 576.0) Testground.ts:205:13
+[1763486349144] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(298.1, 576.0) Testground.ts:205:13
+[1763486349151] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(302.5, 576.0) Testground.ts:205:13
+[1763486349158] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(306.9, 576.0) Testground.ts:205:13
+[1763486349165] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(311.3, 576.0) Testground.ts:205:13
+[1763486349172] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(315.6, 576.0) Testground.ts:205:13
+[1763486349179] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(320.0, 576.0) Testground.ts:205:13
+[1763486349186] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(324.4, 576.0) Testground.ts:205:13
+[1763486349193] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(328.8, 576.0) Testground.ts:205:13
+[1763486349193] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -8.00 -> -7.78 | grounded: false Testground.ts:205:13
+[1763486349201] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.78 -> -7.53 | grounded: false Testground.ts:205:13
+[1763486349207] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.53 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486349214] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.34 -> -7.13 | grounded: false Testground.ts:205:13
+[1763486349221] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.13 -> -6.91 | grounded: false Testground.ts:205:13
+[1763486349228] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.91 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486349235] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.69 -> -6.47 | grounded: false Testground.ts:205:13
+[1763486349242] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.47 -> -6.25 | grounded: false Testground.ts:205:13
+[1763486349249] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.25 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486349255] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.03 -> -5.84 | grounded: false Testground.ts:205:13
+[1763486349263] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.84 -> -5.59 | grounded: false Testground.ts:205:13
+[1763486349269] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.59 -> -5.41 | grounded: false Testground.ts:205:13
+[1763486349276] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.41 -> -5.19 | grounded: false Testground.ts:205:13
+[1763486349284] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.19 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486349290] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.94 -> -4.75 | grounded: false Testground.ts:205:13
+[1763486349297] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.75 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486349304] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.53 -> -4.31 | grounded: false Testground.ts:205:13
+[1763486349312] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.31 -> -4.06 | grounded: false Testground.ts:205:13
+[1763486349318] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.06 -> -3.88 | grounded: false Testground.ts:205:13
+[1763486349325] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.88 -> -3.66 | grounded: false Testground.ts:205:13
+[1763486349332] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.66 -> -3.44 | grounded: false Testground.ts:205:13
+[1763486349339] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.44 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486349346] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.22 -> -3.00 | grounded: false Testground.ts:205:13
+[1763486349352] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.00 -> -2.81 | grounded: false Testground.ts:205:13
+[1763486349360] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.81 -> -2.56 | grounded: false Testground.ts:205:13
+[1763486349367] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.56 -> -2.34 | grounded: false Testground.ts:205:13
+[1763486349374] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.34 -> -2.13 | grounded: false Testground.ts:205:13
+[1763486349380] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.13 -> -1.94 | grounded: false Testground.ts:205:13
+[1763486349388] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.94 -> -1.69 | grounded: false Testground.ts:205:13
+[1763486349395] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -8.00 -> -7.81 | grounded: false Testground.ts:205:13
+[1763486349401] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.81 -> -7.59 | grounded: false Testground.ts:205:13
+[1763486349409] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.59 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486349415] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.34 -> -7.16 | grounded: false Testground.ts:205:13
+[1763486349422] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.16 -> -6.94 | grounded: false Testground.ts:205:13
+[1763486349430] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.94 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486349436] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.69 -> -6.50 | grounded: false Testground.ts:205:13
+[1763486349443] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.50 -> -6.28 | grounded: false Testground.ts:205:13
+[1763486349450] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.28 -> -6.06 | grounded: false Testground.ts:205:13
+[1763486349457] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.06 -> -5.84 | grounded: false Testground.ts:205:13
+[1763486349464] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.84 -> -5.63 | grounded: false Testground.ts:205:13
+[1763486349471] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.63 -> -5.41 | grounded: false Testground.ts:205:13
+[1763486349478] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.41 -> -5.19 | grounded: false Testground.ts:205:13
+[1763486349485] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.19 -> -4.97 | grounded: false Testground.ts:205:13
+[1763486349492] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.97 -> -4.75 | grounded: false Testground.ts:205:13
+[1763486349499] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.75 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486349505] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.53 -> -4.34 | grounded: false Testground.ts:205:13
+[1763486349512] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.34 -> -4.13 | grounded: false Testground.ts:205:13
+[1763486349519] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.13 -> -3.91 | grounded: false Testground.ts:205:13
+[1763486349526] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.91 -> -3.69 | grounded: false Testground.ts:205:13
+[1763486349533] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.69 -> -3.47 | grounded: false Testground.ts:205:13
+[1763486349540] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.47 -> -3.25 | grounded: false Testground.ts:205:13
+[1763486349547] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.25 -> -3.03 | grounded: false Testground.ts:205:13
+[1763486349554] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.03 -> -2.81 | grounded: false Testground.ts:205:13
+[1763486349561] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.81 -> -2.59 | grounded: false Testground.ts:205:13
+[1763486349568] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.59 -> -2.38 | grounded: false Testground.ts:205:13
+[1763486349575] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.38 -> -2.16 | grounded: false Testground.ts:205:13
+[1763486349582] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.16 -> -1.94 | grounded: false Testground.ts:205:13
+[1763486349589] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.94 -> -1.72 | grounded: false Testground.ts:205:13
+[1763486349596] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.72 -> -1.50 | grounded: false Testground.ts:205:13
+[1763486349603] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.50 -> -1.28 | grounded: false Testground.ts:205:13
+[1763486349610] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.28 -> -1.06 | grounded: false Testground.ts:205:13
+[1763486349617] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.06 -> -0.84 | grounded: false Testground.ts:205:13
+[1763486349624] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.84 -> -0.63 | grounded: false Testground.ts:205:13
+[1763486349631] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.63 -> -0.41 | grounded: false Testground.ts:205:13
+[1763486349637] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.41 -> -0.22 | grounded: false Testground.ts:205:13
+[1763486349645] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.22 -> 0.03 | grounded: false Testground.ts:205:13
+[1763486349651] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.03 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486349658] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.22 -> 0.44 | grounded: false Testground.ts:205:13
+[1763486349666] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.44 -> 0.69 | grounded: false Testground.ts:205:13
+[1763486349672] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.69 -> 0.88 | grounded: false Testground.ts:205:13
+[1763486349679] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.88 -> 1.09 | grounded: false Testground.ts:205:13
+[1763486349686] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.09 -> 1.31 | grounded: false Testground.ts:205:13
+[1763486349693] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.31 -> 1.53 | grounded: false Testground.ts:205:13
+[1763486349700] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.53 -> 1.75 | grounded: false Testground.ts:205:13
+[1763486349707] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.75 -> 1.97 | grounded: false Testground.ts:205:13
+[1763486349714] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.97 -> 2.19 | grounded: false Testground.ts:205:13
+[1763486349721] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.19 -> 2.41 | grounded: false Testground.ts:205:13
+[1763486349728] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.41 -> 2.63 | grounded: false Testground.ts:205:13
+[1763486349734] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.63 -> 2.81 | grounded: false Testground.ts:205:13
+[1763486349742] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.81 -> 3.06 | grounded: false Testground.ts:205:13
+[1763486349748] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.06 -> 3.25 | grounded: false Testground.ts:205:13
+[1763486349755] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.25 -> 3.47 | grounded: false Testground.ts:205:13
+[1763486349763] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.47 -> 3.72 | grounded: false Testground.ts:205:13
+[1763486349770] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.72 -> 3.94 | grounded: false Testground.ts:205:13
+[1763486349777] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.94 -> 4.16 | grounded: false Testground.ts:205:13
+[1763486349783] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.16 -> 4.34 | grounded: false Testground.ts:205:13
+[1763486349790] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.34 -> 4.56 | grounded: false Testground.ts:205:13
+[1763486349797] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.56 -> 4.78 | grounded: false Testground.ts:205:13
+[1763486349804] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.78 -> 5.00 | grounded: false Testground.ts:205:13
+[1763486349811] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.00 -> 5.22 | grounded: false Testground.ts:205:13
+[1763486349818] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.22 -> 5.44 | grounded: false Testground.ts:205:13
+[1763486349825] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.44 -> 5.66 | grounded: false Testground.ts:205:13
+[1763486349832] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.66 -> 5.88 | grounded: false Testground.ts:205:13
+[1763486349839] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.88 -> 6.09 | grounded: false Testground.ts:205:13
+[1763486349846] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.09 -> 6.31 | grounded: false Testground.ts:205:13
+[1763486349853] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.31 -> 6.53 | grounded: false Testground.ts:205:13
+[1763486349860] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.53 -> 6.75 | grounded: false Testground.ts:205:13
+[1763486349867] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.75 -> 6.97 | grounded: false Testground.ts:205:13
+[1763486349874] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.97 -> 7.19 | grounded: false Testground.ts:205:13
+[1763486349881] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.19 -> 7.41 | grounded: false Testground.ts:205:13
+[1763486349887] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.41 -> 7.59 | grounded: false Testground.ts:205:13
+[1763486349894] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.59 -> 7.81 | grounded: false Testground.ts:205:13
+[1763486349901] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.81 -> 8.03 | grounded: false Testground.ts:205:13
+[1763486349909] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.03 -> 8.28 | grounded: false Testground.ts:205:13
+[1763486349915] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.28 -> 8.47 | grounded: false Testground.ts:205:13
+[1763486349922] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.47 -> 8.69 | grounded: false Testground.ts:205:13
+[1763486349929] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.69 -> 8.91 | grounded: false Testground.ts:205:13
+[1763486349936] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.91 -> 9.13 | grounded: false Testground.ts:205:13
+[1763486349943] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 9.13 -> 9.34 | grounded: false Testground.ts:205:13
+[1763486349943] LANDED BELOW TILE (CENTER): type=solid at (44,35) | pos: (708.1, 543.3) Testground.ts:205:13
+[1763486349943] COLLISION CHECK: grounded=false -> true | tiles: CENTER_BELOW[44,35]=solid dist=0.7 | pos: (708.1, 544.0) Testground.ts:205:13
+[1763486349950] GROUND RIGHT: 8.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(708.1, 544.0) Testground.ts:205:13
+[1763486349957] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(712.5, 544.0) Testground.ts:205:13
+[1763486349964] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(716.9, 544.0) Testground.ts:205:13
+[1763486349971] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(721.3, 544.0) Testground.ts:205:13
+[1763486349978] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(725.6, 544.0) Testground.ts:205:13
+[1763486349985] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(730.0, 544.0) Testground.ts:205:13
+[1763486349991] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(734.4, 544.0) Testground.ts:205:13
+[1763486349998] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(738.1, 544.0) Testground.ts:205:13
+[1763486350006] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(742.5, 544.0) Testground.ts:205:13
+[1763486350012] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(747.5, 544.0) Testground.ts:205:13
+[1763486350019] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(751.3, 544.0) Testground.ts:205:13
+[1763486350027] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(755.6, 544.0) Testground.ts:205:13
+[1763486350033] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(760.6, 544.0) Testground.ts:205:13
+[1763486350040] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(764.4, 544.0) Testground.ts:205:13
+[1763486350048] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(768.8, 544.0) Testground.ts:205:13
+[1763486350054] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(773.8, 544.0) Testground.ts:205:13
+[1763486350062] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(777.5, 544.0) Testground.ts:205:13
+[1763486350068] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(782.5, 544.0) Testground.ts:205:13
+[1763486350075] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(786.3, 544.0) Testground.ts:205:13
+[1763486350082] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(790.6, 544.0) Testground.ts:205:13
+[1763486350089] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(795.0, 544.0) Testground.ts:205:13
+[1763486350096] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(799.4, 544.0) Testground.ts:205:13
+[1763486350103] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(803.8, 544.0) Testground.ts:205:13
+[1763486350110] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(808.1, 544.0) Testground.ts:205:13
+[1763486350117] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(812.5, 544.0) Testground.ts:205:13
+[1763486350124] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(816.9, 544.0) Testground.ts:205:13
+[1763486350130] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(821.3, 544.0) Testground.ts:205:13
+[1763486350138] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(825.0, 544.0) Testground.ts:205:13
+[1763486350144] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(830.0, 544.0) Testground.ts:205:13
+[1763486350151] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(833.8, 544.0) Testground.ts:205:13
+[1763486350151] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -8.00 -> -7.78 | grounded: false Testground.ts:205:13
+[1763486350158] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.78 -> -7.56 | grounded: false Testground.ts:205:13
+[1763486350165] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.56 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486350172] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.34 -> -7.13 | grounded: false Testground.ts:205:13
+[1763486350179] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.13 -> -6.91 | grounded: false Testground.ts:205:13
+[1763486350186] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.91 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486350193] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.69 -> -6.47 | grounded: false Testground.ts:205:13
+[1763486350200] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.47 -> -6.25 | grounded: false Testground.ts:205:13
+[1763486350207] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.25 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486350214] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.03 -> -5.81 | grounded: false Testground.ts:205:13
+[1763486350221] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.81 -> -5.59 | grounded: false Testground.ts:205:13
+[1763486350228] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.59 -> -5.38 | grounded: false Testground.ts:205:13
+[1763486350235] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.38 -> -5.16 | grounded: false Testground.ts:205:13
+[1763486350242] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.16 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486350248] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.94 -> -4.75 | grounded: false Testground.ts:205:13
+[1763486350255] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.75 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486350262] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.53 -> -4.31 | grounded: false Testground.ts:205:13
+[1763486350269] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.31 -> -4.09 | grounded: false Testground.ts:205:13
+[1763486350276] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.09 -> -3.88 | grounded: false Testground.ts:205:13
+[1763486350283] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.88 -> -3.66 | grounded: false Testground.ts:205:13
+[1763486350291] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.66 -> -3.41 | grounded: false Testground.ts:205:13
+[1763486350297] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.41 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486350305] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.22 -> -2.97 | grounded: false Testground.ts:205:13
+[1763486350312] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.97 -> -2.75 | grounded: false Testground.ts:205:13
+[1763486350318] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -8.00 -> -7.81 | grounded: false Testground.ts:205:13
+[1763486350325] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.81 -> -7.59 | grounded: false Testground.ts:205:13
+[1763486350332] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.59 -> -7.38 | grounded: false Testground.ts:205:13
+[1763486350338] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.38 -> -7.19 | grounded: false Testground.ts:205:13
+[1763486350346] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.19 -> -6.94 | grounded: false Testground.ts:205:13
+[1763486350352] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.94 -> -6.75 | grounded: false Testground.ts:205:13
+[1763486350360] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.75 -> -6.50 | grounded: false Testground.ts:205:13
+[1763486350367] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.50 -> -6.28 | grounded: false Testground.ts:205:13
+[1763486350374] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.28 -> -6.06 | grounded: false Testground.ts:205:13
+[1763486350381] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.06 -> -5.84 | grounded: false Testground.ts:205:13
+[1763486350387] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.84 -> -5.66 | grounded: false Testground.ts:205:13
+[1763486350395] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.66 -> -5.41 | grounded: false Testground.ts:205:13
+[1763486350402] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.41 -> -5.19 | grounded: false Testground.ts:205:13
+[1763486350408] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.19 -> -5.00 | grounded: false Testground.ts:205:13
+[1763486350415] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.00 -> -4.78 | grounded: false Testground.ts:205:13
+[1763486350422] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.78 -> -4.56 | grounded: false Testground.ts:205:13
+[1763486350429] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.56 -> -4.34 | grounded: false Testground.ts:205:13
+[1763486350436] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.34 -> -4.13 | grounded: false Testground.ts:205:13
+[1763486350443] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.13 -> -3.91 | grounded: false Testground.ts:205:13
+[1763486350450] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.91 -> -3.69 | grounded: false Testground.ts:205:13
+[1763486350457] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.69 -> -3.47 | grounded: false Testground.ts:205:13
+[1763486350464] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.47 -> -3.25 | grounded: false Testground.ts:205:13
+[1763486350471] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.25 -> -3.03 | grounded: false Testground.ts:205:13
+[1763486350478] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.03 -> -2.81 | grounded: false Testground.ts:205:13
+[1763486350484] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.81 -> -2.63 | grounded: false Testground.ts:205:13
+[1763486350491] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.63 -> -2.41 | grounded: false Testground.ts:205:13
+[1763486350499] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.41 -> -2.16 | grounded: false Testground.ts:205:13
+[1763486350505] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.16 -> -1.97 | grounded: false Testground.ts:205:13
+[1763486350512] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.97 -> -1.75 | grounded: false Testground.ts:205:13
+[1763486350519] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.75 -> -1.53 | grounded: false Testground.ts:205:13
+[1763486350526] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.53 -> -1.31 | grounded: false Testground.ts:205:13
+[1763486350533] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.31 -> -1.09 | grounded: false Testground.ts:205:13
+[1763486350540] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.09 -> -0.88 | grounded: false Testground.ts:205:13
+[1763486350548] DASH START: Direction=1, Distance=800, Speed=60 Testground.ts:205:13
+[1763486350548] VELOCITY CHANGE: vx 60.00 -> 10.00, vy -0.88 -> -0.63 | grounded: false Testground.ts:205:13
+[1763486350555] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.63 -> -0.41 | grounded: false Testground.ts:205:13
+[1763486350561] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.41 -> -0.22 | grounded: false Testground.ts:205:13
+[1763486350568] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.22 -> 0.00 | grounded: false Testground.ts:205:13
+[1763486350575] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486350582] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.22 -> 0.44 | grounded: false Testground.ts:205:13
+[1763486350589] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.44 -> 0.66 | grounded: false Testground.ts:205:13
+[1763486350596] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.66 -> 0.88 | grounded: false Testground.ts:205:13
+[1763486350603] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.88 -> 1.09 | grounded: false Testground.ts:205:13
+[1763486350610] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.09 -> 1.31 | grounded: false Testground.ts:205:13
+[1763486350617] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.31 -> 1.53 | grounded: false Testground.ts:205:13
+[1763486350624] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.53 -> 1.75 | grounded: false Testground.ts:205:13
+[1763486350631] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.75 -> 1.97 | grounded: false Testground.ts:205:13
+[1763486350638] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.97 -> 2.19 | grounded: false Testground.ts:205:13
+[1763486350644] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.19 -> 2.38 | grounded: false Testground.ts:205:13
+[1763486350652] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.38 -> 2.63 | grounded: false Testground.ts:205:13
+[1763486350659] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.63 -> 2.84 | grounded: false Testground.ts:205:13
+[1763486350666] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.84 -> 3.03 | grounded: false Testground.ts:205:13
+[1763486350672] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.03 -> 3.25 | grounded: false Testground.ts:205:13
+[1763486350679] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.25 -> 3.47 | grounded: false Testground.ts:205:13
+[1763486350686] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.47 -> 3.69 | grounded: false Testground.ts:205:13
+[1763486350693] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.69 -> 3.91 | grounded: false Testground.ts:205:13
+[1763486350700] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.91 -> 4.13 | grounded: false Testground.ts:205:13
+[1763486350707] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.13 -> 4.34 | grounded: false Testground.ts:205:13
+[1763486350714] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.34 -> 4.56 | grounded: false Testground.ts:205:13
+[1763486350721] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.56 -> 4.78 | grounded: false Testground.ts:205:13
+[1763486350728] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.78 -> 5.00 | grounded: false Testground.ts:205:13
+[1763486350735] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.00 -> 5.22 | grounded: false Testground.ts:205:13
+[1763486350741] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.22 -> 5.41 | grounded: false Testground.ts:205:13
+[1763486350749] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.41 -> 5.66 | grounded: false Testground.ts:205:13
+[1763486350755] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.66 -> 5.84 | grounded: false Testground.ts:205:13
+[1763486350763] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.84 -> 6.09 | grounded: false Testground.ts:205:13
+[1763486350770] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.09 -> 6.31 | grounded: false Testground.ts:205:13
+[1763486350777] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.31 -> 6.53 | grounded: false Testground.ts:205:13
+[1763486350783] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.53 -> 6.72 | grounded: false Testground.ts:205:13
+[1763486350791] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.72 -> 6.97 | grounded: false Testground.ts:205:13
+[1763486350798] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.97 -> 7.19 | grounded: false Testground.ts:205:13
+[1763486350804] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.19 -> 7.38 | grounded: false Testground.ts:205:13
+[1763486350811] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.38 -> 7.59 | grounded: false Testground.ts:205:13
+[1763486350818] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.59 -> 7.81 | grounded: false Testground.ts:205:13
+[1763486350825] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.81 -> 8.03 | grounded: false Testground.ts:205:13
+[1763486350825] LANDED BELOW TILE (CENTER): type=solid at (77,32) | pos: (1235.8, 492.7) Testground.ts:205:13
+[1763486350825] COLLISION CHECK: grounded=false -> true | tiles: CENTER_BELOW[77,32]=solid dist=3.3 | pos: (1235.8, 496.0) Testground.ts:205:13
+[1763486351783] DASH COMPLETE: Cooldown=30 Testground.ts:205:13
+[1763486351791] GROUND LEFT: 10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1834.5, 496.0) Testground.ts:205:13
+[1763486351797] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1829.5, 496.0) Testground.ts:205:13
+[1763486351804] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1825.8, 496.0) Testground.ts:205:13
+[1763486351811] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1821.4, 496.0) Testground.ts:205:13
+[1763486351818] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1817.0, 496.0) Testground.ts:205:13
+[1763486351825] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1812.6, 496.0) Testground.ts:205:13
+[1763486351832] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1808.3, 496.0) Testground.ts:205:13
+[1763486351839] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1803.9, 496.0) Testground.ts:205:13
+[1763486351846] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1799.5, 496.0) Testground.ts:205:13
+[1763486351853] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1795.1, 496.0) Testground.ts:205:13
+[1763486351859] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1790.8, 496.0) Testground.ts:205:13
+[1763486351866] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1787.0, 496.0) Testground.ts:205:13
+[1763486351874] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1782.6, 496.0) Testground.ts:205:13
+[1763486351881] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1777.6, 496.0) Testground.ts:205:13
+[1763486351887] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1773.3, 496.0) Testground.ts:205:13
+[1763486351895] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(1769.5, 496.0) Testground.ts:205:13
+[1763486351895] VELOCITY CHANGE: vx -10.00 -> -10.00, vy -8.00 -> -7.75 | grounded: false Testground.ts:205:13
+[1763486351901] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.75 -> -7.56 | grounded: false Testground.ts:205:13
+[1763486351908] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.56 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486351915] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.34 -> -7.13 | grounded: false Testground.ts:205:13
+[1763486351923] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.13 -> -6.88 | grounded: false Testground.ts:205:13
+[1763486351929] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.88 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486351937] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.69 -> -6.44 | grounded: false Testground.ts:205:13
+[1763486351943] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.44 -> -6.25 | grounded: false Testground.ts:205:13
+[1763486351950] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.25 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486351957] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.03 -> -5.81 | grounded: false Testground.ts:205:13
+[1763486351964] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.81 -> -5.59 | grounded: false Testground.ts:205:13
+[1763486351971] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.59 -> -5.38 | grounded: false Testground.ts:205:13
+[1763486351978] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.38 -> -5.16 | grounded: false Testground.ts:205:13
+[1763486351985] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.16 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486351991] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.94 -> -4.75 | grounded: false Testground.ts:205:13
+[1763486351999] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.75 -> -4.50 | grounded: false Testground.ts:205:13
+[1763486352006] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.50 -> -4.28 | grounded: false Testground.ts:205:13
+[1763486352012] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.28 -> -4.09 | grounded: false Testground.ts:205:13
+[1763486352020] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.09 -> -3.84 | grounded: false Testground.ts:205:13
+[1763486352026] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.84 -> -3.66 | grounded: false Testground.ts:205:13
+[1763486352034] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.66 -> -3.41 | grounded: false Testground.ts:205:13
+[1763486352040] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.41 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486352048] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.22 -> -2.97 | grounded: false Testground.ts:205:13
+[1763486352054] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.97 -> -2.78 | grounded: false Testground.ts:205:13
+[1763486352061] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.78 -> -2.56 | grounded: false Testground.ts:205:13
+[1763486352068] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.56 -> -2.34 | grounded: false Testground.ts:205:13
+[1763486352075] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.34 -> -2.13 | grounded: false Testground.ts:205:13
+[1763486352082] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.13 -> -1.91 | grounded: false Testground.ts:205:13
+[1763486352089] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.91 -> -1.69 | grounded: false Testground.ts:205:13
+[1763486352096] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.69 -> -1.47 | grounded: false Testground.ts:205:13
+[1763486352103] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.47 -> -1.25 | grounded: false Testground.ts:205:13
+[1763486352109] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.25 -> -1.06 | grounded: false Testground.ts:205:13
+[1763486352117] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.06 -> -0.81 | grounded: false Testground.ts:205:13
+[1763486352124] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -0.81 -> -0.59 | grounded: false Testground.ts:205:13
+[1763486352131] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -0.59 -> -0.38 | grounded: false Testground.ts:205:13
+[1763486352137] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -0.38 -> -0.19 | grounded: false Testground.ts:205:13
+[1763486352145] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -0.19 -> 0.06 | grounded: false Testground.ts:205:13
+[1763486352151] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 0.06 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486352158] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 0.25 -> 0.47 | grounded: false Testground.ts:205:13
+[1763486352165] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 0.47 -> 0.69 | grounded: false Testground.ts:205:13
+[1763486352173] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 0.69 -> 0.94 | grounded: false Testground.ts:205:13
+[1763486352179] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.94 -> 1.13 | grounded: false Testground.ts:205:13
+[1763486352187] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.13 -> 1.38 | grounded: false Testground.ts:205:13
+[1763486352193] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.38 -> 1.56 | grounded: false Testground.ts:205:13
+[1763486352200] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.56 -> 1.78 | grounded: false Testground.ts:205:13
+[1763486352207] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.78 -> 2.00 | grounded: false Testground.ts:205:13
+[1763486352214] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.00 -> 2.22 | grounded: false Testground.ts:205:13
+[1763486352221] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.22 -> 2.44 | grounded: false Testground.ts:205:13
+[1763486352228] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.44 -> 2.66 | grounded: false Testground.ts:205:13
+[1763486352235] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.34 -> -5.13 | grounded: false Testground.ts:205:13
+[1763486352241] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.13 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486352248] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.94 -> -4.72 | grounded: false Testground.ts:205:13
+[1763486352256] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.72 -> -4.47 | grounded: false Testground.ts:205:13
+[1763486352262] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.47 -> -4.28 | grounded: false Testground.ts:205:13
+[1763486352269] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.28 -> -4.06 | grounded: false Testground.ts:205:13
+[1763486352277] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.06 -> -3.81 | grounded: false Testground.ts:205:13
+[1763486352283] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.81 -> -3.63 | grounded: false Testground.ts:205:13
+[1763486352290] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.63 -> -3.41 | grounded: false Testground.ts:205:13
+[1763486352297] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.41 -> -3.19 | grounded: false Testground.ts:205:13
+[1763486352304] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.19 -> -2.97 | grounded: false Testground.ts:205:13
+[1763486352311] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.97 -> -2.75 | grounded: false Testground.ts:205:13
+[1763486352318] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.75 -> -2.53 | grounded: false Testground.ts:205:13
+[1763486352325] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.53 -> -2.31 | grounded: false Testground.ts:205:13
+[1763486352332] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.31 -> -2.09 | grounded: false Testground.ts:205:13
+[1763486352339] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.09 -> -1.88 | grounded: false Testground.ts:205:13
+[1763486352346] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.88 -> -1.66 | grounded: false Testground.ts:205:13
+[1763486352353] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.66 -> -1.44 | grounded: false Testground.ts:205:13
+[1763486352360] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.44 -> -1.22 | grounded: false Testground.ts:205:13
+[1763486352367] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.22 -> -1.00 | grounded: false Testground.ts:205:13
+[1763486352374] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.00 -> -0.78 | grounded: false Testground.ts:205:13
+[1763486352381] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.78 -> -0.56 | grounded: false Testground.ts:205:13
+[1763486352388] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.56 -> -0.34 | grounded: false Testground.ts:205:13
+[1763486352395] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.34 -> -0.13 | grounded: false Testground.ts:205:13
+[1763486352402] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.13 -> 0.09 | grounded: false Testground.ts:205:13
+[1763486352409] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.09 -> 0.31 | grounded: false Testground.ts:205:13
+[1763486352416] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.31 -> 0.53 | grounded: false Testground.ts:205:13
+[1763486352422] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.53 -> 0.72 | grounded: false Testground.ts:205:13
+[1763486352429] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.72 -> 0.94 | grounded: false Testground.ts:205:13
+[1763486352436] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.94 -> 1.16 | grounded: false Testground.ts:205:13
+[1763486352443] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.16 -> 1.38 | grounded: false Testground.ts:205:13
+[1763486352450] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.38 -> 1.59 | grounded: false Testground.ts:205:13
+[1763486352457] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.59 -> 1.81 | grounded: false Testground.ts:205:13
+[1763486352464] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.81 -> 2.03 | grounded: false Testground.ts:205:13
+[1763486352471] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.03 -> 2.25 | grounded: false Testground.ts:205:13
+[1763486352478] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.25 -> 2.47 | grounded: false Testground.ts:205:13
+[1763486352484] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.47 -> 2.66 | grounded: false Testground.ts:205:13
+[1763486352492] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.66 -> 2.91 | grounded: false Testground.ts:205:13
+[1763486352499] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.91 -> 3.13 | grounded: false Testground.ts:205:13
+[1763486352505] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.13 -> 3.31 | grounded: false Testground.ts:205:13
+[1763486352512] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.31 -> 3.53 | grounded: false Testground.ts:205:13
+[1763486352520] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.53 -> 3.78 | grounded: false Testground.ts:205:13
+[1763486352526] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.78 -> 3.97 | grounded: false Testground.ts:205:13
+[1763486352534] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.97 -> 4.22 | grounded: false Testground.ts:205:13
+[1763486352540] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.22 -> 4.41 | grounded: false Testground.ts:205:13
+[1763486352547] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.41 -> 4.63 | grounded: false Testground.ts:205:13
+[1763486352554] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.63 -> 4.84 | grounded: false Testground.ts:205:13
+[1763486352561] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.84 -> 5.06 | grounded: false Testground.ts:205:13
+[1763486352568] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.06 -> 5.28 | grounded: false Testground.ts:205:13
+[1763486352575] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.28 -> 5.50 | grounded: false Testground.ts:205:13
+[1763486352582] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.50 -> 5.72 | grounded: false Testground.ts:205:13
+[1763486352589] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.72 -> 5.94 | grounded: false Testground.ts:205:13
+[1763486352596] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.94 -> 6.16 | grounded: false Testground.ts:205:13
+[1763486352603] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.16 -> 6.38 | grounded: false Testground.ts:205:13
+[1763486352609] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.38 -> 6.56 | grounded: false Testground.ts:205:13
+[1763486352617] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.56 -> 6.81 | grounded: false Testground.ts:205:13
+[1763486352623] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.81 -> 7.00 | grounded: false Testground.ts:205:13
+[1763486352631] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.00 -> 7.25 | grounded: false Testground.ts:205:13
+[1763486352638] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.25 -> 7.47 | grounded: false Testground.ts:205:13
+[1763486352645] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.47 -> 7.69 | grounded: false Testground.ts:205:13
+[1763486352652] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.69 -> 7.91 | grounded: false Testground.ts:205:13
+[1763486352659] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 7.91 -> 8.13 | grounded: false Testground.ts:205:13
+[1763486352666] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.13 -> 8.34 | grounded: false Testground.ts:205:13
+[1763486352672] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.34 -> 8.53 | grounded: false Testground.ts:205:13
+[1763486352679] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.53 -> 8.75 | grounded: false Testground.ts:205:13
+[1763486352686] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.75 -> 8.97 | grounded: false Testground.ts:205:13
+[1763486352693] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 8.97 -> 9.19 | grounded: false Testground.ts:205:13
+[1763486352700] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 9.19 -> 9.41 | grounded: false Testground.ts:205:13
+[1763486352707] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 9.41 -> 9.63 | grounded: false Testground.ts:205:13
+[1763486352713] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 9.63 -> 9.81 | grounded: false Testground.ts:205:13
+[1763486352721] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 9.81 -> 10.06 | grounded: false Testground.ts:205:13
+[1763486352728] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 10.06 -> 10.28 | grounded: false Testground.ts:205:13
+[1763486352734] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 10.28 -> 10.47 | grounded: false Testground.ts:205:13
+[1763486352742] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 10.47 -> 10.72 | grounded: false Testground.ts:205:13
+[1763486352749] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 10.72 -> 10.94 | grounded: false Testground.ts:205:13
+[1763486352755] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 10.94 -> 11.13 | grounded: false Testground.ts:205:13
+[1763486352762] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 11.13 -> 11.34 | grounded: false Testground.ts:205:13
+[1763486352769] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 11.34 -> 11.56 | grounded: false Testground.ts:205:13
+[1763486352777] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 11.56 -> 11.81 | grounded: false Testground.ts:205:13
+[1763486352784] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 11.81 -> 12.03 | grounded: false Testground.ts:205:13
+[1763486352790] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 12.03 -> 12.22 | grounded: false Testground.ts:205:13
+[1763486352797] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 12.22 -> 12.44 | grounded: false Testground.ts:205:13
+[1763486352804] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 12.44 -> 12.66 | grounded: false Testground.ts:205:13
+[1763486352804] LANDED ON TILE (CENTER): type=solid at (121,37) | pos: (1941.0, 576.9) Testground.ts:205:13
+[1763486352804] COLLISION CHECK: grounded=false -> true | tiles: CENTER_ON[121,37]=solid dist=0.9 | pos: (1941.0, 576.0) Testground.ts:205:13
+[1763486352811] GROUND RIGHT: 8.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1941.0, 576.0) Testground.ts:205:13
+[1763486352818] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1945.4, 576.0) Testground.ts:205:13
+[1763486352825] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1949.8, 576.0) Testground.ts:205:13
+[1763486352832] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1954.1, 576.0) Testground.ts:205:13
+[1763486352839] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1958.5, 576.0) Testground.ts:205:13
+[1763486352846] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(1962.9, 576.0) Testground.ts:205:13
+[1763486352853] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352860] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352867] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352874] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352881] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352888] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352894] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352901] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352908] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352915] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352922] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352929] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352936] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352943] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352950] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352957] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352964] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352970] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352978] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352985] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352992] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486352999] GROUND LEFT: 10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2058.5, 576.0) Testground.ts:205:13
+[1763486353006] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2054.1, 576.0) Testground.ts:205:13
+[1763486353012] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2049.8, 576.0) Testground.ts:205:13
+[1763486353012] VELOCITY CHANGE: vx -10.00 -> -10.00, vy -8.00 -> -7.81 | grounded: false Testground.ts:205:13
+[1763486353020] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.81 -> -7.56 | grounded: false Testground.ts:205:13
+[1763486353027] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.56 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486353033] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.34 -> -7.16 | grounded: false Testground.ts:205:13
+[1763486353040] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.16 -> -6.94 | grounded: false Testground.ts:205:13
+[1763486353047] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.94 -> -6.72 | grounded: false Testground.ts:205:13
+[1763486353054] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.72 -> -6.50 | grounded: false Testground.ts:205:13
+[1763486353061] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.50 -> -6.28 | grounded: false Testground.ts:205:13
+[1763486353068] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.28 -> -6.06 | grounded: false Testground.ts:205:13
+[1763486353075] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.06 -> -5.84 | grounded: false Testground.ts:205:13
+[1763486353082] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.84 -> -5.63 | grounded: false Testground.ts:205:13
+[1763486353089] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.63 -> -5.44 | grounded: false Testground.ts:205:13
+[1763486353096] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.44 -> -5.19 | grounded: false Testground.ts:205:13
+[1763486353103] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.19 -> -4.97 | grounded: false Testground.ts:205:13
+[1763486353110] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.97 -> -4.75 | grounded: false Testground.ts:205:13
+[1763486353117] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.75 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486353124] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.53 -> -4.31 | grounded: false Testground.ts:205:13
+[1763486353130] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.31 -> -4.13 | grounded: false Testground.ts:205:13
+[1763486353137] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -4.13 -> -3.91 | grounded: false Testground.ts:205:13
+[1763486353144] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.91 -> -3.69 | grounded: false Testground.ts:205:13
+[1763486353151] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.69 -> -3.47 | grounded: false Testground.ts:205:13
+[1763486353158] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.47 -> -3.25 | grounded: false Testground.ts:205:13
+[1763486353165] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.25 -> -3.03 | grounded: false Testground.ts:205:13
+[1763486353173] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -3.03 -> -2.78 | grounded: false Testground.ts:205:13
+[1763486353179] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.78 -> -2.59 | grounded: false Testground.ts:205:13
+[1763486353186] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.59 -> -2.38 | grounded: false Testground.ts:205:13
+[1763486353194] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.38 -> -2.13 | grounded: false Testground.ts:205:13
+[1763486353200] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -2.13 -> -1.94 | grounded: false Testground.ts:205:13
+[1763486353207] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.94 -> -1.72 | grounded: false Testground.ts:205:13
+[1763486353214] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.72 -> -1.50 | grounded: false Testground.ts:205:13
+[1763486353220] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.50 -> -1.31 | grounded: false Testground.ts:205:13
+[1763486353227] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -1.31 -> -1.09 | grounded: false Testground.ts:205:13
+[1763486353235] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -8.00 -> -7.75 | grounded: false Testground.ts:205:13
+[1763486353242] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.75 -> -7.53 | grounded: false Testground.ts:205:13
+[1763486353249] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.53 -> -7.31 | grounded: false Testground.ts:205:13
+[1763486353256] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.31 -> -7.09 | grounded: false Testground.ts:205:13
+[1763486353263] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -7.09 -> -6.88 | grounded: false Testground.ts:205:13
+[1763486353269] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.88 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486353276] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.69 -> -6.47 | grounded: false Testground.ts:205:13
+[1763486353284] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.47 -> -6.22 | grounded: false Testground.ts:205:13
+[1763486353290] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.22 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486353297] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -6.03 -> -5.81 | grounded: false Testground.ts:205:13
+[1763486353304] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.81 -> -5.59 | grounded: false Testground.ts:205:13
+[1763486353311] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.59 -> -5.38 | grounded: false Testground.ts:205:13
+[1763486353318] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.38 -> -5.16 | grounded: false Testground.ts:205:13
+[1763486353325] VELOCITY CHANGE: vx -8.00 -> -8.00, vy -5.16 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486353332] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.94 -> -4.72 | grounded: false Testground.ts:205:13
+[1763486353339] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.72 -> -4.50 | grounded: false Testground.ts:205:13
+[1763486353346] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.50 -> -4.28 | grounded: false Testground.ts:205:13
+[1763486353353] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.28 -> -4.06 | grounded: false Testground.ts:205:13
+[1763486353360] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.06 -> -3.84 | grounded: false Testground.ts:205:13
+[1763486353367] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.84 -> -3.63 | grounded: false Testground.ts:205:13
+[1763486353373] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.63 -> -3.44 | grounded: false Testground.ts:205:13
+[1763486353380] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.44 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486353388] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.22 -> -2.97 | grounded: false Testground.ts:205:13
+[1763486353394] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.97 -> -2.78 | grounded: false Testground.ts:205:13
+[1763486353401] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.78 -> -2.56 | grounded: false Testground.ts:205:13
+[1763486353408] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.56 -> -2.34 | grounded: false Testground.ts:205:13
+[1763486353415] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.34 -> -2.13 | grounded: false Testground.ts:205:13
+[1763486353422] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.13 -> -1.91 | grounded: false Testground.ts:205:13
+[1763486353429] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.91 -> -1.69 | grounded: false Testground.ts:205:13
+[1763486353436] DASH START: Direction=1, Distance=800, Speed=60 Testground.ts:205:13
+[1763486353436] VELOCITY CHANGE: vx 60.00 -> 10.00, vy -1.69 -> -1.47 | grounded: false Testground.ts:205:13
+[1763486353443] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -1.47 -> -1.25 | grounded: false Testground.ts:205:13
+[1763486353450] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -1.25 -> -1.03 | grounded: false Testground.ts:205:13
+[1763486353457] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -1.03 -> -0.81 | grounded: false Testground.ts:205:13
+[1763486353464] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.81 -> -0.59 | grounded: false Testground.ts:205:13
+[1763486353471] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.59 -> -0.38 | grounded: false Testground.ts:205:13
+[1763486353478] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.38 -> -0.16 | grounded: false Testground.ts:205:13
+[1763486353484] VELOCITY CHANGE: vx 10.00 -> 10.00, vy -0.16 -> 0.03 | grounded: false Testground.ts:205:13
+[1763486353492] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.03 -> 0.28 | grounded: false Testground.ts:205:13
+[1763486353498] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.28 -> 0.47 | grounded: false Testground.ts:205:13
+[1763486353506] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.47 -> 0.72 | grounded: false Testground.ts:205:13
+[1763486353513] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.72 -> 0.94 | grounded: false Testground.ts:205:13
+[1763486353520] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.94 -> 1.16 | grounded: false Testground.ts:205:13
+[1763486353527] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.16 -> 1.38 | grounded: false Testground.ts:205:13
+[1763486353533] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.38 -> 1.56 | grounded: false Testground.ts:205:13
+[1763486353541] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.56 -> 1.81 | grounded: false Testground.ts:205:13
+[1763486353548] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.81 -> 2.03 | grounded: false Testground.ts:205:13
+[1763486353554] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.03 -> 2.22 | grounded: false Testground.ts:205:13
+[1763486353561] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.22 -> 2.44 | grounded: false Testground.ts:205:13
+[1763486353569] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.44 -> 2.69 | grounded: false Testground.ts:205:13
+[1763486353575] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.69 -> 2.88 | grounded: false Testground.ts:205:13
+[1763486353582] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.88 -> 3.09 | grounded: false Testground.ts:205:13
+[1763486353589] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.09 -> 3.31 | grounded: false Testground.ts:205:13
+[1763486353596] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.31 -> 3.53 | grounded: false Testground.ts:205:13
+[1763486353603] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.53 -> 3.75 | grounded: false Testground.ts:205:13
+[1763486353610] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.75 -> 3.97 | grounded: false Testground.ts:205:13
+[1763486353617] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.97 -> 4.19 | grounded: false Testground.ts:205:13
+[1763486353624] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.19 -> 4.41 | grounded: false Testground.ts:205:13
+[1763486353630] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.41 -> 4.59 | grounded: false Testground.ts:205:13
+[1763486353637] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.59 -> 4.81 | grounded: false Testground.ts:205:13
+[1763486353645] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.81 -> 5.06 | grounded: false Testground.ts:205:13
+[1763486353651] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.06 -> 5.25 | grounded: false Testground.ts:205:13
+[1763486353658] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353665] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353672] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353679] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353686] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353694] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353700] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353707] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353714] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353720] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353728] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353735] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353741] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353749] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353756] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353763] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353770] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353777] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353784] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353790] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353797] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353804] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353811] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353818] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353825] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353832] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353839] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353846] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353853] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353860] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353866] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353874] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353881] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353887] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353894] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353902] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353908] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353915] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353922] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353929] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353936] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353943] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353950] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353957] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353964] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353970] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486353978] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486353985] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353992] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.22 | grounded: false Testground.ts:205:13
+[1763486353998] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.19 | grounded: false Testground.ts:205:13
+[1763486354006] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.00 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486354013] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.25 -> 0.47 | grounded: false Testground.ts:205:13
+[1763486354020] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.47 -> 0.69 | grounded: false Testground.ts:205:13
+[1763486354026] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.69 -> 0.88 | grounded: false Testground.ts:205:13
+[1763486354034] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 0.88 -> 1.13 | grounded: false Testground.ts:205:13
+[1763486354040] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.13 -> 1.31 | grounded: false Testground.ts:205:13
+[1763486354047] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.31 -> 1.53 | grounded: false Testground.ts:205:13
+[1763486354054] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.53 -> 1.75 | grounded: false Testground.ts:205:13
+[1763486354061] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.75 -> 1.97 | grounded: false Testground.ts:205:13
+[1763486354068] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 1.97 -> 2.19 | grounded: false Testground.ts:205:13
+[1763486354076] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.19 -> 2.44 | grounded: false Testground.ts:205:13
+[1763486354082] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.44 -> 2.63 | grounded: false Testground.ts:205:13
+[1763486354089] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.63 -> 2.84 | grounded: false Testground.ts:205:13
+[1763486354095] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 2.84 -> 3.03 | grounded: false Testground.ts:205:13
+[1763486354103] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.03 -> 3.28 | grounded: false Testground.ts:205:13
+[1763486354110] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.28 -> 3.50 | grounded: false Testground.ts:205:13
+[1763486354117] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.50 -> 3.72 | grounded: false Testground.ts:205:13
+[1763486354123] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.72 -> 3.91 | grounded: false Testground.ts:205:13
+[1763486354131] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 3.91 -> 4.16 | grounded: false Testground.ts:205:13
+[1763486354138] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.16 -> 4.38 | grounded: false Testground.ts:205:13
+[1763486354144] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.38 -> 4.56 | grounded: false Testground.ts:205:13
+[1763486354151] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.56 -> 4.78 | grounded: false Testground.ts:205:13
+[1763486354158] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 4.78 -> 5.00 | grounded: false Testground.ts:205:13
+[1763486354165] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.00 -> 5.22 | grounded: false Testground.ts:205:13
+[1763486354173] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.22 -> 5.47 | grounded: false Testground.ts:205:13
+[1763486354179] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.47 -> 5.66 | grounded: false Testground.ts:205:13
+[1763486354187] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.66 -> 5.91 | grounded: false Testground.ts:205:13
+[1763486354193] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 5.91 -> 6.09 | grounded: false Testground.ts:205:13
+[1763486354200] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.09 -> 6.31 | grounded: false Testground.ts:205:13
+[1763486354207] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.31 -> 6.53 | grounded: false Testground.ts:205:13
+[1763486354214] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.53 -> 6.75 | grounded: false Testground.ts:205:13
+[1763486354221] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.75 -> 6.97 | grounded: false Testground.ts:205:13
+[1763486354228] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 6.97 -> 7.19 | grounded: false Testground.ts:205:13
+[1763486354234] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.19 -> 7.38 | grounded: false Testground.ts:205:13
+[1763486354242] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.38 -> 7.63 | grounded: false Testground.ts:205:13
+[1763486354249] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.63 -> 7.84 | grounded: false Testground.ts:205:13
+[1763486354256] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 7.84 -> 8.06 | grounded: false Testground.ts:205:13
+[1763486354263] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 8.06 -> 8.28 | grounded: false Testground.ts:205:13
+[1763486354269] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 8.28 -> 8.47 | grounded: false Testground.ts:205:13
+[1763486354277] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 8.47 -> 8.72 | grounded: false Testground.ts:205:13
+[1763486354284] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 8.72 -> 8.94 | grounded: false Testground.ts:205:13
+[1763486354290] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 8.94 -> 9.13 | grounded: false Testground.ts:205:13
+[1763486354298] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 9.13 -> 9.38 | grounded: false Testground.ts:205:13
+[1763486354304] VELOCITY CHANGE: vx 10.00 -> 10.00, vy 9.38 -> 9.56 | grounded: false Testground.ts:205:13
+[1763486354304] LANDED BELOW TILE (CENTER): type=solid at (157,37) | pos: (2510.3, 573.5) Testground.ts:205:13
+[1763486354304] COLLISION CHECK: grounded=false -> true | tiles: CENTER_BELOW[157,37]=solid dist=2.5 | pos: (2510.3, 576.0) Testground.ts:205:13
+[1763486354680] DASH COMPLETE: Cooldown=30 Testground.ts:205:13
+[1763486354686] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2745.3, 576.0) Testground.ts:205:13
+[1763486354693] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2749.0, 576.0) Testground.ts:205:13
+[1763486354700] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2753.4, 576.0) Testground.ts:205:13
+[1763486354707] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2757.8, 576.0) Testground.ts:205:13
+[1763486354714] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2762.1, 576.0) Testground.ts:205:13
+[1763486354721] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2766.5, 576.0) Testground.ts:205:13
+[1763486354728] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2770.9, 576.0) Testground.ts:205:13
+[1763486354735] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2775.3, 576.0) Testground.ts:205:13
+[1763486354742] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2779.6, 576.0) Testground.ts:205:13
+[1763486354748] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2784.0, 576.0) Testground.ts:205:13
+[1763486354756] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2787.8, 576.0) Testground.ts:205:13
+[1763486354762] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2792.8, 576.0) Testground.ts:205:13
+[1763486354769] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2796.5, 576.0) Testground.ts:205:13
+[1763486354777] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2800.9, 576.0) Testground.ts:205:13
+[1763486354783] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2805.9, 576.0) Testground.ts:205:13
+[1763486354790] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2809.6, 576.0) Testground.ts:205:13
+[1763486354797] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2814.0, 576.0) Testground.ts:205:13
+[1763486354804] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2818.4, 576.0) Testground.ts:205:13
+[1763486354811] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2822.8, 576.0) Testground.ts:205:13
+[1763486354818] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2827.1, 576.0) Testground.ts:205:13
+[1763486354825] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2831.5, 576.0) Testground.ts:205:13
+[1763486354832] GROUND NO INPUT: vx=10.00 (friction will apply) Testground.ts:205:13
+[1763486354832] GROUND FRICTION: 10.00 -> 9.20 (friction: 0.92) Testground.ts:205:13
+[1763486354832] VELOCITY CHANGE: vx 10.00 -> 9.20, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486354839] GROUND NO INPUT: vx=9.20 (friction will apply) Testground.ts:205:13
+[1763486354839] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -8.00 -> -7.78 | grounded: false Testground.ts:205:13
+[1763486354846] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -7.78 -> -7.56 | grounded: false Testground.ts:205:13
+[1763486354853] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -7.56 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486354860] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -7.34 -> -7.13 | grounded: false Testground.ts:205:13
+[1763486354867] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -7.13 -> -6.91 | grounded: false Testground.ts:205:13
+[1763486354874] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -6.91 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486354880] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -6.69 -> -6.50 | grounded: false Testground.ts:205:13
+[1763486354888] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -6.50 -> -6.25 | grounded: false Testground.ts:205:13
+[1763486354895] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -6.25 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486354902] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -6.03 -> -5.81 | grounded: false Testground.ts:205:13
+[1763486354908] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -5.81 -> -5.63 | grounded: false Testground.ts:205:13
+[1763486354916] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -5.63 -> -5.38 | grounded: false Testground.ts:205:13
+[1763486354922] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -5.38 -> -5.19 | grounded: false Testground.ts:205:13
+[1763486354929] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -5.19 -> -4.97 | grounded: false Testground.ts:205:13
+[1763486354937] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -4.97 -> -4.72 | grounded: false Testground.ts:205:13
+[1763486354943] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -4.72 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486354950] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -4.53 -> -4.31 | grounded: false Testground.ts:205:13
+[1763486354957] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -4.31 -> -4.09 | grounded: false Testground.ts:205:13
+[1763486354964] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -4.09 -> -3.88 | grounded: false Testground.ts:205:13
+[1763486354971] VELOCITY CHANGE: vx 9.20 -> 9.20, vy -3.88 -> -3.66 | grounded: false Testground.ts:205:13
+[1763486354978] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.66 -> -3.44 | grounded: false Testground.ts:205:13
+[1763486354985] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.44 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486354992] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.22 -> -3.00 | grounded: false Testground.ts:205:13
+[1763486354998] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.00 -> -2.81 | grounded: false Testground.ts:205:13
+[1763486355005] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.81 -> -2.59 | grounded: false Testground.ts:205:13
+[1763486355012] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.59 -> -2.38 | grounded: false Testground.ts:205:13
+[1763486355019] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -8.00 -> -7.78 | grounded: false Testground.ts:205:13
+[1763486355027] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.78 -> -7.53 | grounded: false Testground.ts:205:13
+[1763486355033] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.53 -> -7.34 | grounded: false Testground.ts:205:13
+[1763486355040] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.34 -> -7.13 | grounded: false Testground.ts:205:13
+[1763486355047] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -7.13 -> -6.91 | grounded: false Testground.ts:205:13
+[1763486355054] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.91 -> -6.69 | grounded: false Testground.ts:205:13
+[1763486355062] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.69 -> -6.44 | grounded: false Testground.ts:205:13
+[1763486355068] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.44 -> -6.25 | grounded: false Testground.ts:205:13
+[1763486355075] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.25 -> -6.03 | grounded: false Testground.ts:205:13
+[1763486355082] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -6.03 -> -5.81 | grounded: false Testground.ts:205:13
+[1763486355089] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.81 -> -5.59 | grounded: false Testground.ts:205:13
+[1763486355096] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.59 -> -5.38 | grounded: false Testground.ts:205:13
+[1763486355103] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.38 -> -5.16 | grounded: false Testground.ts:205:13
+[1763486355110] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -5.16 -> -4.94 | grounded: false Testground.ts:205:13
+[1763486355117] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.94 -> -4.72 | grounded: false Testground.ts:205:13
+[1763486355123] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.72 -> -4.53 | grounded: false Testground.ts:205:13
+[1763486355131] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.53 -> -4.28 | grounded: false Testground.ts:205:13
+[1763486355137] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.28 -> -4.09 | grounded: false Testground.ts:205:13
+[1763486355145] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -4.09 -> -3.84 | grounded: false Testground.ts:205:13
+[1763486355152] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.84 -> -3.63 | grounded: false Testground.ts:205:13
+[1763486355158] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.63 -> -3.44 | grounded: false Testground.ts:205:13
+[1763486355165] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.44 -> -3.22 | grounded: false Testground.ts:205:13
+[1763486355172] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.22 -> -3.00 | grounded: false Testground.ts:205:13
+[1763486355180] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -3.00 -> -2.75 | grounded: false Testground.ts:205:13
+[1763486355186] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.75 -> -2.56 | grounded: false Testground.ts:205:13
+[1763486355193] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.56 -> -2.34 | grounded: false Testground.ts:205:13
+[1763486355200] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.34 -> -2.13 | grounded: false Testground.ts:205:13
+[1763486355207] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -2.13 -> -1.91 | grounded: false Testground.ts:205:13
+[1763486355214] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.91 -> -1.69 | grounded: false Testground.ts:205:13
+[1763486355221] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.69 -> -1.47 | grounded: false Testground.ts:205:13
+[1763486355227] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.47 -> -1.28 | grounded: false Testground.ts:205:13
+[1763486355235] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.28 -> -1.03 | grounded: false Testground.ts:205:13
+[1763486355242] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -1.03 -> -0.81 | grounded: false Testground.ts:205:13
+[1763486355249] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.81 -> -0.59 | grounded: false Testground.ts:205:13
+[1763486355255] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.59 -> -0.41 | grounded: false Testground.ts:205:13
+[1763486355263] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.41 -> -0.16 | grounded: false Testground.ts:205:13
+[1763486355270] VELOCITY CHANGE: vx 8.00 -> 8.00, vy -0.16 -> 0.06 | grounded: false Testground.ts:205:13
+[1763486355276] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.06 -> 0.25 | grounded: false Testground.ts:205:13
+[1763486355284] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.25 -> 0.50 | grounded: false Testground.ts:205:13
+[1763486355291] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.50 -> 0.72 | grounded: false Testground.ts:205:13
+[1763486355297] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.72 -> 0.91 | grounded: false Testground.ts:205:13
+[1763486355304] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 0.91 -> 1.13 | grounded: false Testground.ts:205:13
+[1763486355311] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.13 -> 1.34 | grounded: false Testground.ts:205:13
+[1763486355318] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.34 -> 1.56 | grounded: false Testground.ts:205:13
+[1763486355325] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.56 -> 1.78 | grounded: false Testground.ts:205:13
+[1763486355332] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 1.78 -> 2.00 | grounded: false Testground.ts:205:13
+[1763486355339] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.00 -> 2.22 | grounded: false Testground.ts:205:13
+[1763486355346] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.22 -> 2.44 | grounded: false Testground.ts:205:13
+[1763486355353] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.44 -> 2.66 | grounded: false Testground.ts:205:13
+[1763486355359] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.66 -> 2.84 | grounded: false Testground.ts:205:13
+[1763486355367] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 2.84 -> 3.09 | grounded: false Testground.ts:205:13
+[1763486355373] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.09 -> 3.28 | grounded: false Testground.ts:205:13
+[1763486355381] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.28 -> 3.53 | grounded: false Testground.ts:205:13
+[1763486355387] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.53 -> 3.72 | grounded: false Testground.ts:205:13
+[1763486355394] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.72 -> 3.94 | grounded: false Testground.ts:205:13
+[1763486355402] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 3.94 -> 4.19 | grounded: false Testground.ts:205:13
+[1763486355408] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.19 -> 4.38 | grounded: false Testground.ts:205:13
+[1763486355415] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.38 -> 4.59 | grounded: false Testground.ts:205:13
+[1763486355423] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.59 -> 4.84 | grounded: false Testground.ts:205:13
+[1763486355430] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 4.84 -> 5.06 | grounded: false Testground.ts:205:13
+[1763486355436] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.06 -> 5.25 | grounded: false Testground.ts:205:13
+[1763486355443] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.25 -> 5.47 | grounded: false Testground.ts:205:13
+[1763486355450] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.47 -> 5.69 | grounded: false Testground.ts:205:13
+[1763486355457] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.69 -> 5.91 | grounded: false Testground.ts:205:13
+[1763486355464] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 5.91 -> 6.13 | grounded: false Testground.ts:205:13
+[1763486355471] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.13 -> 6.34 | grounded: false Testground.ts:205:13
+[1763486355478] VELOCITY CHANGE: vx 8.00 -> 8.00, vy 6.34 -> 6.56 | grounded: false Testground.ts:205:13
+[1763486355484] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 6.56 -> 6.75 | grounded: false Testground.ts:205:13
+[1763486355492] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 6.75 -> 7.00 | grounded: false Testground.ts:205:13
+[1763486355499] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 7.00 -> 7.22 | grounded: false Testground.ts:205:13
+[1763486355506] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 7.22 -> 7.44 | grounded: false Testground.ts:205:13
+[1763486355513] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 7.44 -> 7.66 | grounded: false Testground.ts:205:13
+[1763486355520] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 7.66 -> 7.88 | grounded: false Testground.ts:205:13
+[1763486355527] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 7.88 -> 8.09 | grounded: false Testground.ts:205:13
+[1763486355534] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 8.09 -> 8.31 | grounded: false Testground.ts:205:13
+[1763486355541] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 8.31 -> 8.53 | grounded: false Testground.ts:205:13
+[1763486355547] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 8.53 -> 8.72 | grounded: false Testground.ts:205:13
+[1763486355555] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 8.72 -> 8.97 | grounded: false Testground.ts:205:13
+[1763486355561] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 8.97 -> 9.16 | grounded: false Testground.ts:205:13
+[1763486355568] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 9.16 -> 9.38 | grounded: false Testground.ts:205:13
+[1763486355575] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 9.38 -> 9.59 | grounded: false Testground.ts:205:13
+[1763486355582] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 9.59 -> 9.81 | grounded: false Testground.ts:205:13
+[1763486355589] VELOCITY CHANGE: vx -8.00 -> -8.00, vy 9.81 -> 10.03 | grounded: false Testground.ts:205:13
+[1763486355589] LANDED BELOW TILE (CENTER): type=solid at (195,36) | pos: (3117.8, 559.4) Testground.ts:205:13
+[1763486355589] COLLISION CHECK: grounded=false -> true | tiles: CENTER_BELOW[195,36]=solid dist=0.6 | pos: (3117.8, 560.0) Testground.ts:205:13
+[1763486355596] GROUND LEFT: -8.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3117.8, 560.0) Testground.ts:205:13
+[1763486355603] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3113.5, 560.0) Testground.ts:205:13
+[1763486355610] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3109.1, 560.0) Testground.ts:205:13
+[1763486355617] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3104.7, 560.0) Testground.ts:205:13
+[1763486355623] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3100.3, 560.0) Testground.ts:205:13
+[1763486355630] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3096.6, 560.0) Testground.ts:205:13
+[1763486355637] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3092.2, 560.0) Testground.ts:205:13
+[1763486355644] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3087.8, 560.0) Testground.ts:205:13
+[1763486355651] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3083.5, 560.0) Testground.ts:205:13
+[1763486355658] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3079.1, 560.0) Testground.ts:205:13
+[1763486355666] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3074.7, 560.0) Testground.ts:205:13
+[1763486355672] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3069.7, 560.0) Testground.ts:205:13
+[1763486355680] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3066.0, 560.0) Testground.ts:205:13
+[1763486355686] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3061.0, 560.0) Testground.ts:205:13
+[1763486355693] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3057.2, 560.0) Testground.ts:205:13
+[1763486355700] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3052.8, 560.0) Testground.ts:205:13
+[1763486355707] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3048.5, 560.0) Testground.ts:205:13
+[1763486355714] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3044.1, 560.0) Testground.ts:205:13
+[1763486355721] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3039.7, 560.0) Testground.ts:205:13
+[1763486355727] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3035.3, 560.0) Testground.ts:205:13
+[1763486355734] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3031.6, 560.0) Testground.ts:205:13
+[1763486355742] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3027.2, 560.0) Testground.ts:205:13
+[1763486355748] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3022.2, 560.0) Testground.ts:205:13
+[1763486355755] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3018.5, 560.0) Testground.ts:205:13
+[1763486355763] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3014.1, 560.0) Testground.ts:205:13
+[1763486355769] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3009.1, 560.0) Testground.ts:205:13
+[1763486355777] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3005.3, 560.0) Testground.ts:205:13
+[1763486355784] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(3000.3, 560.0) Testground.ts:205:13
+[1763486355791] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2996.0, 560.0) Testground.ts:205:13
+[1763486355797] GROUND LEFT: -10.00 -> -10.00 | GROUND_MOVE_SPEED=10 | tile=solid | pos=(2991.6, 560.0) Testground.ts:205:13
+[1763486355804] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355811] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355818] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355825] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355832] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355839] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355846] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355853] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355859] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355867] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355874] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355880] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355887] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355895] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355901] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355908] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355916] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355923] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355929] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355936] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355943] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355950] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355957] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355963] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355971] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355978] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355985] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355991] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486355998] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356005] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356012] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356020] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356027] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356033] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356040] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356048] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356055] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356061] GROUND NO INPUT: vx=-10.00 (friction will apply) Testground.ts:205:13
+[1763486356068] GROUND RIGHT: -10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2822.8, 560.0) Testground.ts:205:13
+[1763486356075] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2827.2, 560.0) Testground.ts:205:13
+[1763486356082] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2831.6, 560.0) Testground.ts:205:13
+[1763486356089] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2836.0, 560.0) Testground.ts:205:13
+[1763486356096] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2840.3, 560.0) Testground.ts:205:13
+[1763486356103] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2844.7, 560.0) Testground.ts:205:13
+[1763486356110] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2849.1, 560.0) Testground.ts:205:13
+[1763486356117] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2853.5, 560.0) Testground.ts:205:13
+[1763486356123] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2857.8, 560.0) Testground.ts:205:13
+[1763486356131] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2861.6, 560.0) Testground.ts:205:13
+[1763486356137] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2866.6, 560.0) Testground.ts:205:13
+[1763486356144] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2870.3, 560.0) Testground.ts:205:13
+[1763486356151] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2874.7, 560.0) Testground.ts:205:13
+[1763486356159] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2879.1, 560.0) Testground.ts:205:13
+[1763486356165] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2884.1, 560.0) Testground.ts:205:13
+[1763486356172] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2887.8, 560.0) Testground.ts:205:13
+[1763486356180] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2892.2, 560.0) Testground.ts:205:13
+[1763486356186] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2897.2, 560.0) Testground.ts:205:13
+[1763486356193] GROUND RIGHT: 10.00 -> 10.00 | GROUND_MOVE_SPEED=10 | tile=empty | pos=(2901.0, 560.0) Testground.ts:205:13
+[1763486356193] DASH START: Direction=1, Distance=800, Speed=60 Testground.ts:205:13
+[1763486356193] VELOCITY CHANGE: vx 60.00 -> 10.00, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357068] GROUND FRICTION: 10.00 -> 9.20 (friction: 0.92) Testground.ts:205:13
+[1763486357068] VELOCITY CHANGE: vx 10.00 -> 9.20, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357075] GROUND FRICTION: 9.20 -> 8.46 (friction: 0.92) Testground.ts:205:13
+[1763486357075] VELOCITY CHANGE: vx 9.20 -> 8.46, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357082] GROUND FRICTION: 8.46 -> 7.79 (friction: 0.92) Testground.ts:205:13
+[1763486357082] VELOCITY CHANGE: vx 8.46 -> 7.79, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357089] GROUND FRICTION: 7.79 -> 7.16 (friction: 0.92) Testground.ts:205:13
+[1763486357089] VELOCITY CHANGE: vx 7.79 -> 7.16, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357096] GROUND FRICTION: 7.16 -> 6.59 (friction: 0.92) Testground.ts:205:13
+[1763486357096] VELOCITY CHANGE: vx 7.16 -> 6.59, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357102] GROUND FRICTION: 6.59 -> 6.06 (friction: 0.92) Testground.ts:205:13
+[1763486357102] VELOCITY CHANGE: vx 6.59 -> 6.06, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357110] GROUND FRICTION: 6.06 -> 5.58 (friction: 0.92) Testground.ts:205:13
+[1763486357110] VELOCITY CHANGE: vx 6.06 -> 5.58, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357117] GROUND FRICTION: 5.58 -> 5.13 (friction: 0.92) Testground.ts:205:13
+[1763486357117] VELOCITY CHANGE: vx 5.58 -> 5.13, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357124] GROUND FRICTION: 5.13 -> 4.72 (friction: 0.92) Testground.ts:205:13
+[1763486357124] VELOCITY CHANGE: vx 5.13 -> 4.72, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357131] GROUND FRICTION: 4.72 -> 4.34 (friction: 0.92) Testground.ts:205:13
+[1763486357131] VELOCITY CHANGE: vx 4.72 -> 4.34, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357137] GROUND FRICTION: 4.34 -> 4.00 (friction: 0.92) Testground.ts:205:13
+[1763486357137] VELOCITY CHANGE: vx 4.34 -> 4.00, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357144] GROUND FRICTION: 4.00 -> 3.68 (friction: 0.92) Testground.ts:205:13
+[1763486357144] VELOCITY CHANGE: vx 4.00 -> 3.68, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357152] GROUND FRICTION: 3.68 -> 3.38 (friction: 0.92) Testground.ts:205:13
+[1763486357152] VELOCITY CHANGE: vx 3.68 -> 3.38, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357159] GROUND FRICTION: 3.38 -> 3.11 (friction: 0.92) Testground.ts:205:13
+[1763486357159] VELOCITY CHANGE: vx 3.38 -> 3.11, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357166] GROUND FRICTION: 3.11 -> 2.86 (friction: 0.92) Testground.ts:205:13
+[1763486357166] VELOCITY CHANGE: vx 3.11 -> 2.86, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357172] GROUND FRICTION: 2.86 -> 2.63 (friction: 0.92) Testground.ts:205:13
+[1763486357172] VELOCITY CHANGE: vx 2.86 -> 2.63, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357179] GROUND FRICTION: 2.63 -> 2.42 (friction: 0.92) Testground.ts:205:13
+[1763486357179] VELOCITY CHANGE: vx 2.63 -> 2.42, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357186] GROUND FRICTION: 2.42 -> 2.23 (friction: 0.92) Testground.ts:205:13
+[1763486357186] VELOCITY CHANGE: vx 2.42 -> 2.23, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357193] GROUND FRICTION: 2.23 -> 2.05 (friction: 0.92) Testground.ts:205:13
+[1763486357193] VELOCITY CHANGE: vx 2.23 -> 2.05, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357200] GROUND FRICTION: 2.05 -> 1.89 (friction: 0.92) Testground.ts:205:13
+[1763486357200] VELOCITY CHANGE: vx 2.05 -> 1.89, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357207] GROUND FRICTION: 1.89 -> 1.74 (friction: 0.92) Testground.ts:205:13
+[1763486357207] VELOCITY CHANGE: vx 1.89 -> 1.74, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357214] GROUND FRICTION: 1.74 -> 1.60 (friction: 0.92) Testground.ts:205:13
+[1763486357214] VELOCITY CHANGE: vx 1.74 -> 1.60, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357221] GROUND FRICTION: 1.60 -> 1.47 (friction: 0.92) Testground.ts:205:13
+[1763486357221] VELOCITY CHANGE: vx 1.60 -> 1.47, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357228] GROUND FRICTION: 1.47 -> 1.35 (friction: 0.92) Testground.ts:205:13
+[1763486357228] VELOCITY CHANGE: vx 1.47 -> 1.35, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357235] GROUND FRICTION: 1.35 -> 1.24 (friction: 0.92) Testground.ts:205:13
+[1763486357235] VELOCITY CHANGE: vx 1.35 -> 1.24, vy 0.00 -> 0.00 | grounded: true Testground.ts:205:13
+[1763486357242] GROUND FRICTION: 1.24 -> 1.14 (friction: 0.92) Testground.ts:205:13
+[1763486357248] GROUND FRICTION: 1.14 -> 1.05 (friction: 0.92) Testground.ts:205:13
+[1763486357256] GROUND FRICTION: 1.05 -> 0.97 (friction: 0.92) Testground.ts:205:13
+[1763486357263] GROUND FRICTION: 0.97 -> 0.89 (friction: 0.92) Testground.ts:205:13
+[1763486357269] GROUND FRICTION: 0.89 -> 0.82 (friction: 0.92) Testground.ts:205:13
+[1763486357276] GROUND FRICTION: 0.82 -> 0.75 (friction: 0.92) Testground.ts:205:13
+[1763486357283] GROUND FRICTION: 0.75 -> 0.69 (friction: 0.92) Testground.ts:205:13
+[1763486357290] GROUND FRICTION: 0.69 -> 0.64 (friction: 0.92) Testground.ts:205:13
+[1763486357297] GROUND FRICTION: 0.64 -> 0.59 (friction: 0.92) Testground.ts:205:13
+[1763486357304] GROUND FRICTION: 0.59 -> 0.54 (friction: 0.92) Testground.ts:205:13
+[1763486357311] GROUND FRICTION: 0.54 -> 0.50 (friction: 0.92) Testground.ts:205:13
+[1763486357318] GROUND FRICTION: 0.50 -> 0.46 (friction: 0.92) Testground.ts:205:13
+[1763486357325] GROUND FRICTION: 0.46 -> 0.42 (friction: 0.92) Testground.ts:205:13
+[1763486357332] GROUND FRICTION: 0.42 -> 0.39 (friction: 0.92) Testground.ts:205:13
+[1763486357339] GROUND FRICTION: 0.39 -> 0.36 (friction: 0.92) Testground.ts:205:13
+[1763486357346] GROUND FRICTION: 0.36 -> 0.33 (friction: 0.92) Testground.ts:205:13
+[1763486357353] GROUND FRICTION: 0.33 -> 0.30 (friction: 0.92) Testground.ts:205:13
+[1763486357360] GROUND FRICTION: 0.30 -> 0.28 (friction: 0.92) Testground.ts:205:13
+[1763486357686] GROUND FRICTION: 0.28 -> 0.26 (friction: 0.92) Testground.ts:205:13
+[1763486357693] GROUND FRICTION: 0.26 -> 0.23 (friction: 0.92) Testground.ts:205:13
+[1763486357700] GROUND FRICTION: 0.23 -> 0.22 (friction: 0.92) Testground.ts:205:13
+[1763486357707] GROUND FRICTION: 0.22 -> 0.20 (friction: 0.92) Testground.ts:205:13
+[1763486357714] GROUND FRICTION: 0.20 -> 0.18 (friction: 0.92) Testground.ts:205:13
+[1763486357721] GROUND FRICTION: 0.18 -> 0.17 (friction: 0.92) Testground.ts:205:13
+[1763486357728] GROUND FRICTION: 0.17 -> 0.15 (friction: 0.92) Testground.ts:205:13
+[1763486357734] GROUND FRICTION: 0.15 -> 0.14 (friction: 0.92) Testground.ts:205:13
+[1763486357742] GROUND FRICTION: 0.14 -> 0.13 (friction: 0.92) Testground.ts:205:13
+[1763486357749] GROUND FRICTION: 0.13 -> 0.12 (friction: 0.92) Testground.ts:205:13
+[1763486357825] GROUND FRICTION: 0.05 -> 0.00 (friction: 0.92) Testground.ts:205:13

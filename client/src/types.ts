@@ -27,6 +27,14 @@ export interface Player {
   grounded: boolean;
   canDash: boolean;
   hasDashed: boolean;
+  hasFirstJumped: boolean; // Track if first jump has been used
+  hasSecondJump: boolean; // Track if second jump is available
+  dashCooldown: number; // Cooldown timer for dash (in ticks)
+  isDashing: boolean; // Track if player is currently dashing
+  dashRemaining: number; // Remaining distance to dash (in pixels)
+  dashStartTime?: number; // Timestamp when dash started (for client-side interpolation)
+  dashStartX?: number; // Starting X position for dash interpolation
+  dashTargetX?: number; // Target X position for dash interpolation
   color: string;
   lapCount: number;
   lastCheckpoint: number;
@@ -66,6 +74,7 @@ export interface PlayerInput {
   left: boolean;
   right: boolean;
   jump: boolean;
+  dash: boolean; // F key for dash
   timestamp: number;
 }
 

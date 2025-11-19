@@ -23,7 +23,36 @@ try {
 }
 
 const PORT = process.env.PORT || 3001;
-const httpServer = createServer();
+const httpServer = createServer((req, res) => {
+  // Handle HTTP requests for log retrieval
+  if (req.url === '/debug/logs' && req.method === 'GET') {
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    
+    // Get logs from all active game loops
+    const allLogs: { lobbyId: string; logs: string[] }[] = [];
+    const allLobbies = lobbyManager.getAllLobbies();
+    
+    for (const lobby of allLobbies) {
+      if (lobby.gameState?.status === 'racing') {
+        const gameLoop = (lobbyManager as any).gameLoops.get(lobby.id);
+        if (gameLoop && typeof gameLoop.getLogs === 'function') {
+          allLogs.push({
+            lobbyId: lobby.id,
+            logs: gameLoop.getLogs()
+          });
+        }
+      }
+    }
+    
+    res.end(JSON.stringify({ logs: allLogs }));
+    return;
+  }
+  
+  // Default 404
+  res.statusCode = 404;
+  res.end('Not found');
+});
 const wss = new WebSocketServer({ server: httpServer });
 
 // Initialize storage
@@ -364,6 +393,7 @@ function handlePlayerInput(ws: WebSocket, playerId: string, data: any): void {
     left: data.left || false,
     right: data.right || false,
     jump: data.jump || false,
+    dash: data.dash || false,
     timestamp: data.timestamp || Date.now()
   };
 

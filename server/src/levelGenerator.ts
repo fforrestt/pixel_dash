@@ -240,9 +240,11 @@ export class LevelGenerator {
   }
 
   generateTestLevel(): Level {
-    // Larger test level with ground, platforms, and obstacles for movement testing - CLOSED LOOP
-    const width = 200; // Doubled width for more testing space
-    const height = 30; // Increased height for better vertical space
+    // Comprehensive test level for collision philosophy testing:
+    // - 1 tile elevation changes: Auto-step up (smooth traversal)
+    // - 2+ tile elevation changes: Require jump (wall collision)
+    const width = 400; // Wider for more testing scenarios
+    const height = 50; // Taller for more vertical space
     const tiles: Tile[] = [];
 
     // Initialize all tiles as empty
@@ -252,87 +254,186 @@ export class LevelGenerator {
       }
     }
 
-    const groundY = height - 3;
+    const groundY = height - 3; // Ground level row (base floor = 0)
 
-    // Ground level (bottom 3 rows across entire width for stability)
+    // ========================================================================
+    // GROUND FLOOR - Continuous solid ground across entire width
+    // ========================================================================
     for (let x = 0; x < width; x++) {
       tiles[x * height + groundY].type = 'solid';
       tiles[x * height + groundY + 1].type = 'solid';
       tiles[x * height + groundY + 2].type = 'solid';
     }
 
-    // Left wall (closed loop)
+    // ========================================================================
+    // WALLS - Closed loop boundaries
+    // ========================================================================
+    // Left wall
     for (let y = 0; y < height; y++) {
       tiles[0 * height + y].type = 'solid';
       tiles[1 * height + y].type = 'solid';
     }
 
-    // Right wall (closed loop)
+    // Right wall
     for (let y = 0; y < height; y++) {
       tiles[(width - 1) * height + y].type = 'solid';
       tiles[(width - 2) * height + y].type = 'solid';
     }
 
-    // Start area (left side)
-    const startX = 5;
-    for (let x = startX; x < startX + 3; x++) {
-      for (let y = groundY - 1; y < height; y++) {
+    // ========================================================================
+    // START AREA - Large platform at ground level
+    // ========================================================================
+    const startX = 10;
+    const startPlatformWidth = 15;
+    for (let x = startX; x < startX + startPlatformWidth; x++) {
+      for (let y = groundY; y < height; y++) {
         tiles[x * height + y].type = 'solid';
       }
     }
-    tiles[startX * height + groundY - 2].type = 'start';
+    tiles[startX * height + groundY].type = 'start';
 
-    // Finish area (right side)
-    const finishX = width - 8;
-    for (let x = finishX; x < finishX + 3; x++) {
-      for (let y = groundY - 1; y < height; y++) {
+    // ========================================================================
+    // SECTION 1: STAIRCASE - 1-tile steps (should auto-step up)
+    // ========================================================================
+    // Creates a staircase from groundY to groundY - 5 (6 steps)
+    let currentX = 30;
+    for (let step = 0; step < 6; step++) {
+      const stepY = groundY - step;
+      for (let x = currentX; x < currentX + 8; x++) {
+        tiles[x * height + stepY].type = 'solid';
+      }
+      currentX += 8;
+    }
+
+    // ========================================================================
+    // SECTION 2: 2-TILE WALLS - Should require jump
+    // ========================================================================
+    // Wall 1: 2-tile high wall (requires jump)
+    const wall1X = 85;
+    const wall1Height = 2;
+    for (let y = groundY; y >= groundY - wall1Height + 1; y--) {
+      for (let x = wall1X; x < wall1X + 5; x++) {
         tiles[x * height + y].type = 'solid';
       }
     }
-    tiles[finishX * height + groundY - 2].type = 'finish';
 
-    // Test platforms at various heights for jump/dash testing (expanded for larger map)
-    // Platform 1: Low platform
-    const p1X = 30;
-    const p1Y = groundY - 4;
-    for (let x = p1X; x < p1X + 8; x++) {
-      tiles[x * height + p1Y].type = 'solid';
+    // Platform after wall 1 (at same height as wall top)
+    for (let x = wall1X + 5; x < wall1X + 15; x++) {
+      tiles[x * height + (groundY - wall1Height + 1)].type = 'solid';
     }
 
-    // Platform 2: Medium height
-    const p2X = 55;
-    const p2Y = groundY - 8;
-    for (let x = p2X; x < p2X + 6; x++) {
-      tiles[x * height + p2Y].type = 'solid';
+    // ========================================================================
+    // SECTION 3: MIXED 1-TILE AND 2-TILE STEPS
+    // ========================================================================
+    // 1-tile step up
+    for (let x = 110; x < 118; x++) {
+      tiles[x * height + (groundY - 1)].type = 'solid';
+    }
+    // 2-tile wall (requires jump)
+    const wall2X = 125;
+    for (let y = groundY; y >= groundY - 1; y--) {
+      for (let x = wall2X; x < wall2X + 5; x++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    // Platform after wall 2
+    for (let x = wall2X + 5; x < wall2X + 12; x++) {
+      tiles[x * height + (groundY - 1)].type = 'solid';
     }
 
-    // Platform 3: High platform
-    const p3X = 80;
-    const p3Y = groundY - 12;
-    for (let x = p3X; x < p3X + 8; x++) {
-      tiles[x * height + p3Y].type = 'solid';
+    // ========================================================================
+    // SECTION 4: DESCENDING STAIRCASE - 1-tile steps down
+    // ========================================================================
+    let descX = 145;
+    for (let step = 0; step < 5; step++) {
+      const stepY = groundY - 3 + step; // Descending from groundY - 3 to groundY
+      for (let x = descX; x < descX + 8; x++) {
+        tiles[x * height + stepY].type = 'solid';
+      }
+      descX += 8;
     }
 
-    // Platform 4: Medium height, further right
-    const p4X = 110;
-    const p4Y = groundY - 7;
-    for (let x = p4X; x < p4X + 7; x++) {
-      tiles[x * height + p4Y].type = 'solid';
+    // ========================================================================
+    // SECTION 5: HIGH WALLS - 3+ tiles (require jump)
+    // ========================================================================
+    // 3-tile high wall
+    const wall3X = 190;
+    for (let y = groundY; y >= groundY - 2; y--) {
+      for (let x = wall3X; x < wall3X + 6; x++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    // Platform after 3-tile wall
+    for (let x = wall3X + 6; x < wall3X + 15; x++) {
+      tiles[x * height + (groundY - 2)].type = 'solid';
     }
 
-    // Platform 5: Low platform
-    const p5X = 140;
-    const p5Y = groundY - 5;
-    for (let x = p5X; x < p5X + 6; x++) {
-      tiles[x * height + p5Y].type = 'solid';
+    // 4-tile high wall
+    const wall4X = 215;
+    for (let y = groundY; y >= groundY - 3; y--) {
+      for (let x = wall4X; x < wall4X + 6; x++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    // Platform after 4-tile wall
+    for (let x = wall4X + 6; x < wall4X + 15; x++) {
+      tiles[x * height + (groundY - 3)].type = 'solid';
     }
 
-    // Platform 6: Very high platform for dash testing
-    const p6X = 165;
-    const p6Y = groundY - 15;
-    for (let x = p6X; x < p6X + 10; x++) {
-      tiles[x * height + p6Y].type = 'solid';
+    // ========================================================================
+    // SECTION 6: PLATFORM CHAIN - Various heights
+    // ========================================================================
+    // Platform at groundY - 1 (1-tile step from ground)
+    for (let x = 240; x < 250; x++) {
+      tiles[x * height + (groundY - 1)].type = 'solid';
     }
+    // Platform at groundY - 2 (2-tile step from previous)
+    for (let x = 255; x < 265; x++) {
+      tiles[x * height + (groundY - 2)].type = 'solid';
+    }
+    // Platform at groundY - 1 (1-tile step down from previous)
+    for (let x = 270; x < 280; x++) {
+      tiles[x * height + (groundY - 1)].type = 'solid';
+    }
+    // Platform at groundY (back to ground level)
+    for (let x = 285; x < 295; x++) {
+      tiles[x * height + groundY].type = 'solid';
+    }
+
+    // ========================================================================
+    // SECTION 7: ALTERNATING 1-TILE AND 2-TILE STEPS
+    // ========================================================================
+    let altX = 300;
+    let altY = groundY;
+    // 1-tile step up
+    for (let x = altX; x < altX + 6; x++) {
+      tiles[x * height + (altY - 1)].type = 'solid';
+    }
+    altX += 6;
+    altY = groundY - 1;
+    // 2-tile wall (should stop player)
+    for (let y = altY; y <= altY + 1; y++) {
+      for (let x = altX; x < altX + 5; x++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    altX += 5;
+    // Platform after wall
+    for (let x = altX; x < altX + 8; x++) {
+      tiles[x * height + (altY + 1)].type = 'solid';
+    }
+
+    // ========================================================================
+    // FINISH AREA - Large platform at ground level
+    // ========================================================================
+    const finishX = width - 20;
+    const finishPlatformWidth = 15;
+    for (let x = finishX; x < finishX + finishPlatformWidth; x++) {
+      for (let y = groundY; y < height; y++) {
+        tiles[x * height + y].type = 'solid';
+      }
+    }
+    tiles[finishX * height + groundY].type = 'finish';
 
     return {
       id: 'testground',

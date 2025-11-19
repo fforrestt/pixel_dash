@@ -124,12 +124,6 @@ export class Renderer {
       }
       
       this.ctx.restore();
-
-      // Draw name above player (not rotated)
-      this.ctx.fillStyle = '#fff';
-      this.ctx.font = '10px monospace';
-      this.ctx.textAlign = 'center';
-      this.ctx.fillText(player.name, screenX + PLAYER_SIZE / 2, screenY - 5);
     }
   }
 
@@ -187,6 +181,51 @@ export class Renderer {
       this.ctx.textAlign = 'center';
       this.ctx.fillText(gameState.countdown.toString(), this.canvas.width / 2, this.canvas.height / 2);
     }
+
+    // Dash cooldown indicator (bottom left)
+    this.renderDashCooldown(localPlayer);
+  }
+
+  private renderDashCooldown(player: Player): void {
+    const indicatorSize = 40;
+    const padding = 10;
+    const x = padding;
+    const y = this.canvas.height - indicatorSize - padding;
+
+    // Calculate cooldown progress (1 = fully on cooldown, 0 = ready)
+    const cooldownProgress = player.dashCooldown > 0 
+      ? player.dashCooldown / 30 // DASH_COOLDOWN_TICKS is 30
+      : 0;
+
+    // Draw background box (dark gray)
+    this.ctx.fillStyle = '#333';
+    this.ctx.fillRect(x, y, indicatorSize, indicatorSize);
+    this.ctx.strokeStyle = '#666';
+    this.ctx.lineWidth = 2;
+    this.ctx.strokeRect(x, y, indicatorSize, indicatorSize);
+
+    // Draw blue fill that restores from left to right as cooldown decreases
+    // When cooldownProgress = 1 (just used), no blue (fillWidth = 0)
+    // When cooldownProgress = 0 (ready), full blue (fillWidth = indicatorSize)
+    const fillWidth = indicatorSize * (1 - cooldownProgress);
+    if (fillWidth > 0) {
+      this.ctx.fillStyle = '#0066ff'; // Blue color
+      this.ctx.fillRect(x, y, fillWidth, indicatorSize);
+    }
+
+    // Draw arrow in the middle (always visible)
+    const centerX = x + indicatorSize / 2;
+    const centerY = y + indicatorSize / 2;
+    const arrowSize = 12;
+    
+    this.ctx.fillStyle = '#fff';
+    this.ctx.beginPath();
+    // Right-pointing arrow
+    this.ctx.moveTo(centerX - arrowSize / 2, centerY - arrowSize / 2);
+    this.ctx.lineTo(centerX + arrowSize / 2, centerY);
+    this.ctx.lineTo(centerX - arrowSize / 2, centerY + arrowSize / 2);
+    this.ctx.closePath();
+    this.ctx.fill();
   }
 
   renderMapEditor(level: Level, selectedTileType: string, mouseX: number, mouseY: number): void {
