@@ -15,6 +15,19 @@ export class TestgroundScreen {
   private lastUpdate = 0;
   private logBuffer: string[] = [];
   private logBufferSize = 100;
+  private stepUpAnimationTime: number = 0; // Time elapsed in step-up animation
+  private stepUpStartX: number = 0; // Starting X position when step-up begins
+  private stepUpStartY: number = 0; // Starting Y position when step-up begins
+  private stepUpTargetX: number = 0; // Target X position for step-up
+  private stepUpTargetY: number = 0; // Target Y position for step-up
+  private stepUpPivotX: number = 0; // Pivot point X (corner 3 - bottom right when moving right)
+  private stepUpPivotY: number = 0; // Pivot point Y (corner 3 - bottom right when moving right)
+  private stepUpDirection: number = 1; // 1 for right, -1 for left
+  private stepUpSpeed: number = 0; // Speed when step-up was triggered (for distance calculation)
+  private isSteppingUp: boolean = false; // Whether player is currently stepping up
+  private readonly STEP_UP_ROTATION_DEGREES = 90; // 90 degree corner roll
+  private readonly STEP_UP_ANIMATION_DURATION_MS = 200; // Duration of step-up animation (quick roll)
+  private readonly STEP_UP_EARLY_TRIGGER_DISTANCE = 8; // Pixels before edge to trigger (for fast movement)
 
   // Physics constants (matching server)
   private readonly GRAVITY = 0.5;
@@ -340,8 +353,11 @@ export class TestgroundScreen {
     // Update physics (pass input to know if friction should apply)
     this.updatePhysics(deltaTime, currentInput);
 
-    // Check collisions
-    this.checkCollisions();
+    // Check collisions (skip during step-up animation to prevent interference)
+    // Also skip for a brief moment after step-up completes to prevent immediate re-triggering
+    if (!this.isSteppingUp && this.stepUpAnimationTime === 0) {
+      this.checkCollisions();
+    }
 
     // Render
     this.renderer.renderGame(this.gameState, this.localPlayer.id);
@@ -588,14 +604,105 @@ export class TestgroundScreen {
       }
     }
 
-    // Apply gravity
-    if (!this.localPlayer.grounded) {
+    // Handle step-up animation (corner roll with upward movement)
+    if (this.isSteppingUp && this.stepUpAnimationTime > 0) {
+      this.stepUpAnimationTime += deltaTime;
+      const progress = Math.min(this.stepUpAnimationTime / this.STEP_UP_ANIMATION_DURATION_MS, 1);
+      
+      if (progress < 1) {
+        // Use eased progress for smoother animation
+        const easedProgress = progress < 0.5 
+          ? 2 * progress * progress // Ease in
+          : 1 - Math.pow(-2 * progress + 2, 2) / 2; // Ease out
+        
+        // Rotate 90 degrees around the pivot point (corner 3 - bottom right when moving right)
+        const rotationRadians = (easedProgress * this.STEP_UP_ROTATION_DEGREES * this.stepUpDirection) * Math.PI / 180;
+        this.localPlayer.rotation = easedProgress * this.STEP_UP_ROTATION_DEGREES * this.stepUpDirection;
+        
+        // First, interpolate the base Y position from start to target (this creates the "pop up" effect)
+        const yDistance = this.stepUpTargetY - this.stepUpStartY;
+        const baseY = this.stepUpStartY + yDistance * easedProgress;
+        
+        // Add a small lift arc to clear the step (sine wave for smooth arc)
+        const liftHeight = Math.sin(progress * Math.PI) * 6; // 6 pixel lift at peak
+        const liftedY = baseY - liftHeight;
+        
+        // Now calculate the rotation offset around the pivot
+        // The pivot point moves upward with the cube
+        const pivotStartY = this.stepUpStartY + this.PLAYER_SIZE; // Bottom of cube at start
+        const pivotTargetY = this.stepUpTargetY + this.PLAYER_SIZE; // Bottom of cube at target
+        const currentPivotY = pivotStartY + (pivotTargetY - pivotStartY) * easedProgress;
+        
+        // Distance from pivot to player center (at start position)
+        // When moving right: pivot is bottom-right, so offset is (PLAYER_SIZE/2, PLAYER_SIZE/2)
+        // When moving left: pivot is bottom-left, so offset is (-PLAYER_SIZE/2, PLAYER_SIZE/2)
+        const pivotToCenterX = (this.stepUpDirection === 1) ? this.PLAYER_SIZE / 2 : -this.PLAYER_SIZE / 2;
+        const pivotToCenterY = this.PLAYER_SIZE / 2;
+        
+        // Rotate the offset vector
+        const rotatedOffsetX = pivotToCenterX * Math.cos(rotationRadians) - pivotToCenterY * Math.sin(rotationRadians);
+        const rotatedOffsetY = pivotToCenterX * Math.sin(rotationRadians) + pivotToCenterY * Math.cos(rotationRadians);
+        
+        // Calculate X position: interpolate from start to target (allows horizontal movement during animation)
+        // The distance traveled is based on the speed when animation started
+        const xDistance = this.stepUpTargetX - this.stepUpStartX;
+        const currentX = this.stepUpStartX + xDistance * easedProgress;
+        
+        // Apply rotation offset to X position (small adjustment for corner roll effect)
+        // The pivot X also moves forward with the player during animation
+        const pivotXProgress = easedProgress;
+        const currentPivotX = this.stepUpPivotX + (xDistance * pivotXProgress);
+        const rotationXOffset = currentPivotX - rotatedOffsetX - currentX;
+        this.localPlayer.x = currentX + rotationXOffset * 0.3; // Blend rotation offset (30% influence)
+        
+        // Y position: prioritize upward movement, then add rotation effect
+        // The pivot moves up, and we rotate around it
+        // Calculate where the center should be based on the moving pivot and rotation
+        const centerYFromPivot = currentPivotY - rotatedOffsetY;
+        const rotationBasedY = centerYFromPivot - this.PLAYER_SIZE; // Convert center to top-left corner
+        
+        // Blend the lifted Y (upward movement) with rotation-based Y
+        // This ensures the cube actually pops up while rotating
+        // As we approach the end, favor the target position more to ensure smooth landing
+        const upwardWeight = progress > 0.8 ? 1.0 : 0.8; // At end, use pure upward movement
+        const blendedY = liftedY * upwardWeight + rotationBasedY * (1 - upwardWeight);
+        
+        // Ensure we're moving toward target (never go backwards)
+        if (progress > 0.9) {
+          // In final 10%, lerp directly to target to ensure exact landing
+          const finalProgress = (progress - 0.9) / 0.1; // 0 to 1 in final 10%
+          this.localPlayer.y = blendedY * (1 - finalProgress) + this.stepUpTargetY * finalProgress;
+        } else {
+          this.localPlayer.y = blendedY;
+        }
+      } else {
+        // Animation complete - snap to final position exactly
+        // Don't reset X - preserve current horizontal position (player may have moved)
+        this.localPlayer.y = this.stepUpTargetY; // Snap to exact target Y
+        this.localPlayer.rotation = 0;
+        this.localPlayer.grounded = true;
+        this.localPlayer.vy = 0; // Ensure no vertical velocity
+        this.isSteppingUp = false;
+        // Set to negative value to indicate animation just completed (prevents immediate re-trigger)
+        // Shorter cooldown - we need collision detection to work quickly to prevent clipping
+        this.stepUpAnimationTime = -50; // Cooldown period (50ms) - just enough to prevent immediate re-trigger
+      }
+    } else if (this.stepUpAnimationTime < 0) {
+      // Cooldown period after step-up completes
+      this.stepUpAnimationTime += deltaTime;
+      if (this.stepUpAnimationTime >= 0) {
+        this.stepUpAnimationTime = 0; // Reset to allow new step-ups
+      }
+    }
+
+    // Apply gravity (but not during step-up animation)
+    if (!this.localPlayer.grounded && !this.isSteppingUp) {
       this.localPlayer.vy += this.GRAVITY * (deltaTime / 16); // Normalize to 60fps
       
       // Update rotation when in air (spinning effect)
       this.localPlayer.rotation += this.ROTATION_SPEED * (this.localPlayer.vx > 0 ? 1 : -1);
       this.localPlayer.rotation = this.localPlayer.rotation % 360; // Keep rotation in 0-360 range
-    } else {
+    } else if (this.localPlayer.grounded && !this.isSteppingUp) {
       // On ground: reset rotation immediately (not smoothly) to prevent spinning on platforms
       this.localPlayer.rotation = 0;
       
@@ -736,17 +843,54 @@ export class TestgroundScreen {
               const playerRightX = this.localPlayer.x + this.PLAYER_SIZE;
               const horizontalProximity = (playerRightX >= tileLeftX - 2 && playerLeftX < tileRightX + 2);
               
-              if (horizontalProximity) {
-                // Step up to the platform
-                this.localPlayer.y = tileTopY - this.PLAYER_SIZE;
-                this.localPlayer.vy = 0;
-                this.localPlayer.grounded = true;
-                this.localPlayer.rotation = 0;
-                this.localPlayer.hasFirstJumped = false;
-                this.localPlayer.hasSecondJump = false;
-                onGround = true;
-                this.log(`STEP-UP FROM GROUND CHECK: Stepped to tile (${checkX}, ${playerBottom - 1}) | pos: (${this.localPlayer.x.toFixed(1)}, ${this.localPlayer.y.toFixed(1)})`);
-                break;
+              if (horizontalProximity && !this.isSteppingUp && this.stepUpAnimationTime === 0) {
+                // Step up to the platform with jump animation
+                const targetY = tileTopY - this.PLAYER_SIZE;
+                
+                // Only start if player is below the target (hasn't already stepped up)
+                // Relaxed check - we need to catch step-ups before clipping through
+                if (this.localPlayer.y > targetY + 1) {
+                  // Start step-up animation (jump + rotation)
+                  // Determine direction based on player velocity or position
+                  // Default to right if moving right, otherwise left
+                  const isMovingRight = this.localPlayer.vx >= 0;
+                  const playerRightX = this.localPlayer.x + this.PLAYER_SIZE;
+                  const playerLeftX = this.localPlayer.x;
+                  const playerBottomY = this.localPlayer.y + this.PLAYER_SIZE;
+                  
+                  // Calculate how far player will travel during animation based on current speed
+                  const animationDurationFrames = this.STEP_UP_ANIMATION_DURATION_MS / 16; // Convert ms to frames (assuming ~60fps)
+                  const distanceTraveled = this.localPlayer.vx * animationDurationFrames;
+                  
+                  // Start step-up animation (corner roll)
+                  this.stepUpStartX = this.localPlayer.x;
+                  this.stepUpStartY = this.localPlayer.y;
+                  this.stepUpTargetX = this.localPlayer.x + distanceTraveled; // Move forward during animation
+                  this.stepUpTargetY = targetY;
+                  
+                  if (isMovingRight) {
+                    // Pivot at bottom-right corner
+                    this.stepUpPivotX = playerRightX;
+                    this.stepUpPivotY = playerBottomY;
+                    this.stepUpDirection = 1;
+                  } else {
+                    // Pivot at bottom-left corner
+                    this.stepUpPivotX = playerLeftX;
+                    this.stepUpPivotY = playerBottomY;
+                    this.stepUpDirection = -1;
+                  }
+                  
+                  this.stepUpSpeed = this.localPlayer.vx; // Store speed for animation
+                  this.stepUpAnimationTime = 0.1; // Small positive value to start animation
+                  this.isSteppingUp = true;
+                  this.localPlayer.vy = 0; // Stop vertical velocity during step-up
+                  this.localPlayer.grounded = false; // Temporarily ungrounded during animation
+                  this.localPlayer.hasFirstJumped = false;
+                  this.localPlayer.hasSecondJump = false;
+                  onGround = false; // Not on ground during animation
+                  this.log(`STEP-UP FROM GROUND CHECK: Starting corner roll animation to tile (${checkX}, ${playerBottom - 1}) | from ${this.localPlayer.y.toFixed(1)} to ${targetY.toFixed(1)} | speed: ${this.localPlayer.vx.toFixed(2)}, distance: ${distanceTraveled.toFixed(1)}`);
+                  break;
+                }
               }
             }
           }
@@ -1209,7 +1353,11 @@ export class TestgroundScreen {
             // For step-up (elevationChange === 1), check if player is approaching or overlapping
             // For walls (elevationChange >= 2), check if approaching (not just overlapping) to prevent pass-through
             const isStepUp = elevationChange === 1 && !isMultiLevelWall; // Don't step up if it's a multi-level wall
-            const isApproaching = playerRightX >= tileLeftX - 2 && this.localPlayer.x < tileRightX;
+            // Calculate early trigger distance based on speed
+            // Faster movement = trigger earlier to allow animation to complete before collision
+            const playerSpeed = Math.abs(this.localPlayer.vx);
+            const earlyTriggerDistance = Math.min(this.STEP_UP_EARLY_TRIGGER_DISTANCE, playerSpeed * (this.STEP_UP_ANIMATION_DURATION_MS / 16) * 0.5);
+            const isApproaching = playerRightX >= tileLeftX - earlyTriggerDistance && this.localPlayer.x < tileRightX;
             const shouldStepUp = isStepUp && isApproaching;
             // For walls, check if player is approaching horizontally OR overlapping vertically
             // This prevents pass-through when jumping up into walls
@@ -1242,17 +1390,41 @@ export class TestgroundScreen {
                 return; // Exit early, collision resolved
               }
               
-              if (elevationChange === 1 && !isMultiLevelWall) {
-                // 1 tile step up: Auto-step up (smooth traversal)
+              if (elevationChange === 1 && !isMultiLevelWall && !this.isSteppingUp && this.stepUpAnimationTime === 0) {
+                // 1 tile step up: Auto-step up with jump animation
                 const platformTopY = blockingTileY;
-                this.localPlayer.y = platformTopY * this.TILE_SIZE - this.PLAYER_SIZE;
-                this.localPlayer.vy = 0;
-                this.localPlayer.grounded = true;
-                this.localPlayer.hasFirstJumped = false;
-                this.localPlayer.hasSecondJump = false;
-                this.localPlayer.rotation = 0;
-                // Don't stop horizontal movement - allow smooth traversal
-                this.log(`AUTO STEP UP RIGHT: Stepped to tile (${nextTileX}, ${platformTopY}) | pos: (${this.localPlayer.x.toFixed(1)}, ${this.localPlayer.y.toFixed(1)})`);
+                const targetY = platformTopY * this.TILE_SIZE - this.PLAYER_SIZE;
+                
+                // Only start if player is below the target (hasn't already stepped up)
+                // Relaxed check - we need to catch step-ups before clipping through
+                if (this.localPlayer.y > targetY + 1) {
+                  // Pivot point is bottom-right corner (corner 3) when moving right
+                  // This is the corner that will stay in place during rotation
+                  const playerRightX = this.localPlayer.x + this.PLAYER_SIZE;
+                  const playerBottomYPos = this.localPlayer.y + this.PLAYER_SIZE;
+                  
+                  // Calculate how far player will travel during animation based on current speed
+                  const animationDurationFrames = this.STEP_UP_ANIMATION_DURATION_MS / 16; // Convert ms to frames (assuming ~60fps)
+                  const distanceTraveled = this.localPlayer.vx * animationDurationFrames;
+                  
+                  // Start step-up animation (corner roll)
+                  this.stepUpStartX = this.localPlayer.x;
+                  this.stepUpStartY = this.localPlayer.y;
+                  this.stepUpTargetX = this.localPlayer.x + distanceTraveled; // Move forward during animation
+                  this.stepUpTargetY = targetY;
+                  this.stepUpPivotX = playerRightX; // Bottom-right corner X
+                  this.stepUpPivotY = playerBottomYPos; // Bottom-right corner Y
+                  this.stepUpDirection = 1; // Moving right
+                  this.stepUpSpeed = this.localPlayer.vx; // Store speed for animation
+                  this.stepUpAnimationTime = 0.1; // Small positive value to start animation
+                  this.isSteppingUp = true;
+                  this.localPlayer.vy = 0; // Stop vertical velocity during step-up
+                  this.localPlayer.grounded = false; // Temporarily ungrounded during animation
+                  this.localPlayer.hasFirstJumped = false;
+                  this.localPlayer.hasSecondJump = false;
+                  // Don't stop horizontal movement - allow smooth traversal
+                  this.log(`AUTO STEP UP RIGHT: Starting corner roll animation to tile (${nextTileX}, ${platformTopY}) | from ${this.localPlayer.y.toFixed(1)} to ${targetY.toFixed(1)} | speed: ${this.localPlayer.vx.toFixed(2)}, distance: ${distanceTraveled.toFixed(1)}`);
+                }
               } else if (isMultiLevelWall || elevationChange >= 2 || (elevationChange >= 1 && blockingTileY < currentFloorY)) {
                 // 2+ tile wall: Stop player (requires jump to traverse)
                 // Block both horizontal and vertical movement through the wall
@@ -1604,17 +1776,44 @@ export class TestgroundScreen {
                 return; // Exit early, collision resolved
               }
               
-              if (elevationChange === 1 && !isMultiLevelWallLeft) {
-                // 1 tile step up: Auto-step up (smooth traversal)
+              // Only trigger step-up if not currently stepping up AND cooldown has expired
+              if (elevationChange === 1 && !isMultiLevelWallLeft && !this.isSteppingUp && this.stepUpAnimationTime === 0) {
+                // 1 tile step up: Auto-step up with corner roll animation
                 const platformTopY = blockingTileY;
-                this.localPlayer.y = platformTopY * this.TILE_SIZE - this.PLAYER_SIZE;
-                this.localPlayer.vy = 0;
-                this.localPlayer.grounded = true;
-                this.localPlayer.hasFirstJumped = false;
-                this.localPlayer.hasSecondJump = false;
-                this.localPlayer.rotation = 0;
-                // Don't stop horizontal movement - allow smooth traversal
-                this.log(`AUTO STEP UP LEFT: Stepped to tile (${nextTileX}, ${platformTopY}) | pos: (${this.localPlayer.x.toFixed(1)}, ${this.localPlayer.y.toFixed(1)})`);
+                const targetY = platformTopY * this.TILE_SIZE - this.PLAYER_SIZE;
+                
+                // Only start if player is below the target (hasn't already stepped up)
+                // Add larger tolerance to prevent re-triggering when already at target or during rapid step-ups
+                const playerBottomY = this.localPlayer.y + this.PLAYER_SIZE;
+                const platformTopYPos = platformTopY * this.TILE_SIZE;
+                if (this.localPlayer.y > targetY + 2 && playerBottomY < platformTopYPos + 4) {
+                  // Pivot point is bottom-left corner (corner 4) when moving left
+                  // This is the corner that will stay in place during rotation
+                  const playerLeftX = this.localPlayer.x;
+                  const playerBottomY = this.localPlayer.y + this.PLAYER_SIZE;
+                  
+                  // Calculate how far player will travel during animation based on current speed
+                  const animationDurationFrames = this.STEP_UP_ANIMATION_DURATION_MS / 16; // Convert ms to frames (assuming ~60fps)
+                  const distanceTraveled = this.localPlayer.vx * animationDurationFrames;
+                  
+                  // Start step-up animation (corner roll)
+                  this.stepUpStartX = this.localPlayer.x;
+                  this.stepUpStartY = this.localPlayer.y;
+                  this.stepUpTargetX = this.localPlayer.x + distanceTraveled; // Move forward during animation
+                  this.stepUpTargetY = targetY;
+                  this.stepUpPivotX = playerLeftX; // Bottom-left corner X
+                  this.stepUpPivotY = playerBottomY; // Bottom-left corner Y
+                  this.stepUpDirection = -1; // Moving left (counter-clockwise rotation)
+                  this.stepUpSpeed = this.localPlayer.vx; // Store speed for animation
+                  this.stepUpAnimationTime = 0.1; // Small positive value to start animation
+                  this.isSteppingUp = true;
+                  this.localPlayer.vy = 0; // Stop vertical velocity during step-up
+                  this.localPlayer.grounded = false; // Temporarily ungrounded during animation
+                  this.localPlayer.hasFirstJumped = false;
+                  this.localPlayer.hasSecondJump = false;
+                  // Don't stop horizontal movement - allow smooth traversal
+                  this.log(`AUTO STEP UP LEFT: Starting corner roll animation to tile (${nextTileX}, ${platformTopY}) | from ${this.localPlayer.y.toFixed(1)} to ${targetY.toFixed(1)} | speed: ${this.localPlayer.vx.toFixed(2)}, distance: ${distanceTraveled.toFixed(1)}`);
+                }
               } else if (isMultiLevelWallLeft || elevationChange >= 2 || (elevationChange >= 1 && blockingTileY < currentFloorY)) {
                 // 2+ tile wall: Stop player (requires jump to traverse)
                 // Block both horizontal and vertical movement through the wall
